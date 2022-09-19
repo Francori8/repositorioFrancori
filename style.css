@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root{
+    --colorFondo: rgba(172, 172, 2, 0.774);
+    --colorLetra: black ; 
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+
+    background-color: var(--colorFondo);
+    font-family: 'Roboto Mono', monospace;
+    color: var(--colorLetra);
+    
+    
+}
+
+input{
+    display: none; 
+}
+input:checked + label{
+    color: red;
+   
+   
+    border: 3px solid red;
+}
+button{
+    font-family: 'Silkscreen',cursive;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+
+    color: white;
+   
+   
+}
+
+button:hover{
+    cursor: pointer;
+
+}
+
+
+h1{
+    
+    font-size: 32px;
+}
+h2{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 12px;
+}
+
+nav{
+    display: none;
+}
+
+
+nav button{
+    width: max-content;
+    height: max-content;
+    font-size: 30px;
+    
+}
+
+#cambiarColor{
+    border: none;
+    font-size: large;
+    width: max-content;
+    height: max-content;
+   
+}
+
+#cabecera{
+    display: flex;
+    justify-content: space-between;
+}
+#contenedorMaterias{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    justify-content: center;
+    gap: 10px;
+}
+.modosJuegos{
+    cursor: pointer;
+
+}
+.materias{
+    width: 200px;
+    height: 100px;
+    border: 3px solid var(--colorLetra);
+    padding: 10px; 
+    box-sizing: border-box;
+    border-radius: 20px;
+    
+}
+
+.select:hover{
+    cursor: pointer;
+}
+
+#grillaVideos{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin-top: 2px;
+}
+
+
+.videos{
+    border: 3px solid var(--colorLetra);
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 1px;
+    color: var(--colorLetra);
+}
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reproductor{
+    display: flex;
+    justify-content: center;
+}
+
+#seleccionarMateria{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid var(--colorLetra);
+    color: var(--colorLetra);
+    filter: drop-shadow(1px 0px 0px var(--colorLetra));
+    margin-top: 30px ;
+}
+
+
+
+.btn-navegacion{
+    background-color: black;
+    border: 2px solid white;
+}
+.apartadoVideos{
+    width: 60px;
+    border-radius: 0px;
+}
+
+.apartadoJuego{
+    width: 50px;
+    border-radius: 10px;
+}
+
+#grillaApuntes{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5px;
+}
+
+#grillaApuntes p{
+    margin: 5px;
+}
+
+#apuntesTeoricos{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.apuntes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+#titulito{
+  
+    justify-content: center;
+}
+
+#navegador{
+    
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a{
+    color: purple;
+}
+
+a:active{
+    color: aliceblue;
+}
+
+#imgFinal{
+    display: grid;
+    justify-content:end;
+    pointer-events: none;
+
+}
+#imagen{
+    
+    filter:drop-shadow(1px 1px 3px #000)
+}
+
+
+#juego{
+    display: grid;
+    grid-template-columns: 30% 65% ;
+   
+}
+
+#preguntas{
+    align-content: center;
+    padding: 10px;
+}
+
+#opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: larger;
+}
+
+#encabezado{
+    display: flex;
+    justify-content: center;
+    border: 3px double var(--colorLetra);
+    background-color: var(--colorFondo);
+    padding: 10px;
+}
+
+.opcion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 3px solid var(--colorLetra);
+    border-radius: 20px;
+    margin: 2px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: var(--colorFondo);
+   
+    
+}
+
+button:disabled{
+    filter: drop-shadow(1px -1px 10px #ff0);
+    /* border: 5px solid rgb(100, 170, 100); */
+
+}
+
+
+#audiovisual, #escritos, #volver, #apuntes, #titulito, #juego,#informacion{
+    display: none;
+}
+
+
+
+#contenedorModal{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: 0;
+    color: white;
+}
+#modal{
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: var(--colorFondo);
+    color: var(--colorLetra);
+    opacity: 1;
+    width: 65%;
+    height: 65%;
+    padding: 10px;
+}
+.modal{
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px dashed white
+}
+
+#iconModal{
+    font-size: 32px;
+}
+
+#botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.botonModal{
+    border: 1px solid var(--colorLetra);
+    color: var(--colorLetra);
+    background-color: var(--colorFondo);
+}
+.centrado{
+    display: grid;
+    justify-content: center;
+}
+
+
+.margen10{
+    margin: 10px;
+}
+@media (max-width: 750px){
+    #grillaVideos{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    iframe{
+        width: 500px;
+    }
+}
+@media (max-width: 500px){
+    #grillaVideos{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    iframe{
+        width: 300px;
+    }
+}

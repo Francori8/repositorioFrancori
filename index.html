@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Repositorio</title>
+   
+   
+    <link rel="icon" type = "image/x-icon"href="img/ORI.png" >
+    <link rel="stylesheet" href="style.css" >
+    <script src="informacion.js"></script>
+    
+</head>
+<body>
+    <section id="seccionModal"></section>
+    <br>
+    <header>
+       <div id="cabecera">
+            <h1 id="titulo">Reposit<u>ori</u>o </h1>
+            <button id="cambiarColor">🌗</button>
+        </div>
+    </header>
+    <br>
+    <main> 
+    
+        <section id="home">
+            <div id="contenedorMaterias"></div>
+            <button id="seleccionarMateria">Seleccionar</button>
+        </section>
+
+        <nav id="navegador">
+            <button id="volver" class="btn-navegacion" title="Inicio">🏠</button>
+            <button id="irVideo" class="btn-navegacion apartadoVideos" title="Videos">▶</button>               
+            <button id="irApunte" class="btn-navegacion" title="Apuntes">✍</button>
+            <button id="irJuego" class="btn-navegacion apartadoJuego" title="Juego">❔</button> 
+            <button id="irInformacion" class="btn-navegacion" title="Informacion">📄</button> 
+        </nav>
+        
+      
+
+        <h2 id="titulito">Materia</h2>
+        <section id="audiovisual">
+            <div>       
+                <div class="reproductor">
+                    <iframe width="700" height="360" src="" title="Video" name="VideoVer" frameborder="1"  id="repro" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+                </div>
+                <div id="grillaVideos"></div>
+            </div>
+        </section>
+
+        <section id="apuntes">
+            <div class="reproductor">
+                <iframe width="550" height="500" src="" title="Apunte de practico" name="ApuntePractico" frameborder="1"  id="practico" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" oncut="return true" allowfullscreen> </iframe>
+                <iframe width="550" height="500" src="" title="Apunte de teoria" name="ApunteTeoria" frameborder="1"  id="teorico" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+            </div>
+            <div id="grillaApuntes">
+                <div id="apuntesPracticos"></div>
+                <div id="apuntesTeoricos"></div>
+            </div>
+        </section>
+
+        <section id="juego">
+            <div id="eleccion"></div>
+            <div id="preguntas"></div>
+        </section>
+
+
+        <section id="informacion">
+            
+        </section>
+
+    
+    </main>
+    <br>
+    <footer>
+        <h3> Los videos y los archivos son de propiedad de quien los creó, el creditó corresponde a cada uno de los creadores de los mismos</h3>
+        <p>Si desea contactarme toque aqui <a href="mailto:francoorizonte@gmail.com">Contacto</a></p>
+        <div id="imgFinal">
+        <img src="./img/ORI.svg" height="150px" id="imagen" alt="icono"/>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="preguntas.js"></script>
+   
+
+</body>
+</html>
