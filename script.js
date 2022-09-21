@@ -181,7 +181,7 @@ function cargarApuntes(){
 function apartadoJuego(){
     seccionInformacion.style.display = "none"
     seccionApuntes.style.display = "none"
-    seccionJuego.style.display = "grid"
+    seccionJuego.style.display = "Flex"
     seccionAudiovisual.style.display = "none"
     botonIrApuntes.disabled = false
     botonIrVideo.disabled = false
@@ -327,14 +327,15 @@ function crearModal(){
             </div> 
        
             <div id="botones" class="margen10">
-                <button id="mandarReporte" class="botonModal">Reportar</button>
-                <button id="mostrarExplicacion" class="botonModal">Explicacion</button>
+              
                 <button id="sacarModal" class="botonModal">Siguiente</button>
             </div>
         </div>
     </div>  
     
     `
+    // <button id="mandarReporte" class="botonModal">Reportar</button>   La idea es agregar esta clase de botones
+    // <button id="mostrarExplicacion" class="botonModal">Explicacion</button>
 
     seccionModal.innerHTML = escritura
     iconModal = document.getElementById("iconModal")

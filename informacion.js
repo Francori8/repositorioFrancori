@@ -130,7 +130,9 @@ const apunteIT1 = new ApuntesT(1,"1Johi8RuxY0pVvyLp55_EPkvkpBY5gQZK","22/08/2022
 const apunteIT2 = new ApuntesT(2,"1pOEz_PpA8a6dZ8haUcwl7xDRSszmJ-Lm","23/08/2022","Procedimientos","Procedimientos, Representacion de problemas, Estrategas de solucion","Teorico",[4,5,6,7],2,"Todos")
 const apunteIT3 = new ApuntesT(3,"1rWhKM3giRjzjF2p218ZnQesEz3RV9qDx","30/08/2022","Repeticion simple y Parametros","Repeticion Simple, Parametros/notacion y contratos de los mismos","Teorico",[8,9,10],[3,4],"Todos")
 const apunteIT4 = new ApuntesT(4,"1fqYF6hhwxvl9A-4pfc_i-O5DVPR907EP","06/09/2022","Tipos de datos","Tipos de datos, restricciones y nuevos operadores","Teorico",11,5,"Todos")
-const apunteIT5 = new ApuntesT(5,"1FHWkR4uo0mwIXyZsCF3Mi6SIZv3ghzjy","15/09/2022","Alternativa Condicional","Alternativa Condicional, Boleeanos, Funciones Simples","Teoria",[12,13,14],[6,7],"Todos")
+const apunteIT5 = new ApuntesT(5,"1FHWkR4uo0mwIXyZsCF3Mi6SIZv3ghzjy","15/09/2022","Alternativa Condicional y Funciones Simples","Alternativa Condicional, Boleeanos, Funciones Simples","Teoria",[12,13,14],[6,7],"Todos")
+const apunteIT6 = new ApuntesT (6,"1GlaRaGrLGuSLn1HjOewOh3RujwTmSU1Q","20/09/2022","Repeticion Condicional","Repeticion COndicional  Recorridos","Teorico",[15,16],8,"Todos")
+
 
 const apunteIP1 = new ApuntesP(1,"1muIGBNXQbLQExOoUdNUh2B0GO6UX9OUU","22/08/2022","Introduccion Gobstones","Conceptos basicos","Practico")
 const apunteIP2 = new ApuntesP(2,"1hvaH7FErP_VY4xv25pBn8IzNSO08ha3f","23/08/2022","Procedimientos","Procedimeintos, problemas y soluciones","Practico")
@@ -139,10 +141,11 @@ const apunteIP4 = new ApuntesP(4,"1GxleuNPUmdSSZtpZKMXhmPXCpQdTpnY4","30/08/2022
 const apunteIP5 = new ApuntesP(5,"1gh2TvC0EZ6iWBZqzEF5atUkbsTv_GPEo","06/09/2022","Tipo de datos","Tipos de datos, nuevos operadores y sensores","Practico")
 const apunteIP6 = new ApuntesP(6 ,"1Sel27vSbPD0a-ZvagLo_E_Iv_FMp31ce","15/09/2022","Alternativa Condicional","Condiciones y demas","Practico")
 const apunteIP7 = new ApuntesP(7,"14ZdqDixxb6PcJ6ukI4S7GoJph-CcwQQb","15/09/2022","Funciones Simple","Funciones simples ","Practico")
+const apunteIP8 = new ApuntesP(8,"1880uAjH23SvMldUT39KN9occrZPC8HnY","20/09/2022","Repeticion Condicional","Repeticion Condicional y Recorridos","Practico")
 
 introduccionProgramacion.videos.push(videoI1,videoI2,videoI3,videoI4,videoI5,videoI6,videoI7,videoI8,videoI9,videoI10, videoI11, videoI12, videoI13,videoI14, videoI15,videoI16, videoI17, videoI18)
-introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7)
-introduccionProgramacion.apuntesteoricos.push(apunteIT1,apunteIT2,apunteIT3,apunteIT4, apunteIT5)
+introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7, apunteIP8)
+introduccionProgramacion.apuntesteoricos.push(apunteIT1,apunteIT2,apunteIT3,apunteIT4, apunteIT5, apunteIT6)
 
 
 //TALLER TRABAJO UNIVERSITARIO
@@ -155,13 +158,25 @@ const videoT3 = new Videos(3,"pc6XeTwhAhk","08/08/2022","Historia del sistema Un
 const videoT4 = new Videos(4,"61ju4wPcJMc","15/09/2022","Historia Del sistema Universitario 4","Universidad y Trabajo (1946-1955)")
 
 const apunteT1 = new ApuntesT(1,"1augRuBhwtNDwIdI72mruY-BSN1Cx4V6v","25/08/2022","Clase 1","Origenes medievales de la universidad","Teorico",1,null,null)
-const apunteT2 = new ApuntesT(2,"1L3hfJaEeXpGxm3j5qbYpiOufTGDUTSVY","03/09/2022","Clase 2","De 1820 a 1900, Ley de Avellaneda","Teorico",2,null,null)
-const apunteT3 = new ApuntesT(3,"1cU9RYHfzvKLHlYdJfztequKKzln53G3x","03/09/2022","Bibliografia Optativa 1 (Leer al menos dos)","Historia Argentina (1916-1955) Alejandro Cattaruzza","Teorico",3,null,null)
-const apunteT4 = new ApuntesT(4,"10rJa_x-sSq9mfOOqX5ngg1I_bDmK8a73","03/09/2022","Bibliografia Optativa 2 (Leer al menos dos)","Capitulo 5 La reforma Universitaria Pablo Buchbinder","Teorico",3,null,null)
-const apunteT5 = new ApuntesT(5,"1U1myaVNltfyxXojXmnk9BULyqoLg6z5B","03/09/2022", "Bibliografia Optativa (Leer al menos dos)","Manifesto Liminar de la Reforma Universitaria Sandra Carli","Teorico",3,null,null)
-const apunteT6 = new ApuntesT(6,"1ILhJ0IB2tv4Vi3mKQzT-rhoG2700jx4n","15/09/2022","Clase 3 ","Peronismo (1946-1955)")
+const apunteT2 = new ApuntesT(2,"1L3hfJaEeXpGxm3j5qbYpiOufTGDUTSVY","03/09/2022","Clase 2","De 1820 a 1900, Ley de Avellaneda","Teorico",[2,3],null,null)
+const apunteT3 = new ApuntesT(3,"1ILhJ0IB2tv4Vi3mKQzT-rhoG2700jx4n","15/09/2022","Clase 3 ","Peronismo (1946-1955)","Teorico",4)
+const apunteT4 = new ApuntesT(4,"1ex1nE6vgmQJEuPg4sK0PwsCVV2SOdf4T","17/09/2022","TP 1","Historia de la universida y Reforma Universitaria","Practico",[1,2,3,4],"Leer algun texto de la bibliografia optatvia","al menos dos")
+
+const apunteTBO1 = new ApuntesP(1,"1uo690XT8krxhxYc6mjYRtoxr-xXM_vfK","03/09/2022","Bibliografia Optativa 1","Historia de las Universidad Argentinas Pablo Buchbinder","BIbliografia Optativa")
+const apunteTBO2 = new ApuntesP(2,"1cU9RYHfzvKLHlYdJfztequKKzln53G3x","03/09/2022","Bibliografia Optativa 2","Historia Argentina (1916-1955) Alejandro Cattaruzza","Bibliografia Optativa")
+const apunteTBO3 = new ApuntesP(3,"10rJa_x-sSq9mfOOqX5ngg1I_bDmK8a73","03/09/2022","Bibliografia Optativa 3","Capitulo 5 La reforma Universitaria Pablo Buchbinder","Bibliografia Optativa")
+const apunteTBO4 = new ApuntesP(4,"1U1myaVNltfyxXojXmnk9BULyqoLg6z5B","03/09/2022", "Bibliografia Optativa 4","Manifesto Liminar de la Reforma Universitaria Sandra Carli","Bibliografia Otativa")
+const apunteTBO5 = new ApuntesP(5,"1kexMCsoImIhXgQjK-0yBfiEKVZWNZtlZ","10/09/2022","Bibliografia Optativa 5","La Juventud Argentina de Cordoba a America, desde la pag 6 hasta que termina ese articulo","Bibliografia Optativa")
+const apunteTBO6 = new ApuntesP (6,"1eMVuXTadca-BDLjbRxn-fSh8SwRYAMEC","10/09/2022","Bibliografai Optativa 6","Todo lo que tenes que saber de la Reforma Universitaria","BIbliogarafia Optativa")
+const apunteTBO7 = new ApuntesP(7,"13JF-QCvOczxpVgvUB88N5autVGxeRr68","10/09/2022","Bibliografia Optativa 7","La reforma Universitario Pasado-Presente","Bilbiografia Optativa")
+const apunteTBO8 = new ApuntesP(8,"1JyDWtRcDJrKEWS0Xw5N3gJom9u6_tytR","17/09/2022","Bibliografia Optativa 8","Cuando los trabajadores salieron de compras","Bilbiografai OPtativa")
+const apunteTBO9 = new ApuntesP(9,"1uUxbcpJBLbC3gb8jk14X39G4kjmTkCT0","17/09/2022","Bibliografia Optativa 9","La crisis del MOdelo Reformista","Bibliografia Optativa")
+const apunteTBO10 = new ApuntesP(10,"1KScLm6n4r_YbFsLuM_sVHUb_EbZ4CNKs","17/09/2022","Bibliografia Optativa 10", "De zoologicos y carnavales")
+
+
 tallerTabajoUniversitario.videos.push(videoT1,videoT2,videoT3, videoT4)
-tallerTabajoUniversitario.apuntesteoricos.push(apunteT1,apunteT2, apunteT3,apunteT4,apunteT5)
+tallerTabajoUniversitario.apuntesteoricos.push(apunteT1,apunteT2, apunteT3,apunteT4)
+tallerTabajoUniversitario.apuntespracticos.push(apunteTBO1,apunteTBO2,apunteTBO3,apunteTBO4,apunteTBO5,apunteTBO6,apunteTBO7,apunteTBO8,apunteTBO9,apunteTBO10)
 
 
 

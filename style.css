@@ -183,11 +183,8 @@ nav button{
 }
 
 #apuntesTeoricos{
-   
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     
 }
 
@@ -230,15 +227,13 @@ a:active{
 }
 
 
-#juego{
-    display: grid;
-    grid-template-columns: 30% 65% ;
-   
-}
+
 
 #preguntas{
+    width: 70%;
     align-content: center;
     padding: 10px;
+    margin: 5px;
 }
 
 #opciones{
@@ -355,6 +350,13 @@ button:disabled{
         display: grid;
         grid-template-columns: auto auto auto;
     }
+    #juego{
+        display: flex;
+        flex-direction: column;
+    }
+    #preguntas{
+        width: 90%;
+    }
     iframe{
         width: 500px;
     }
@@ -363,6 +365,13 @@ button:disabled{
     #grillaVideos{
         display: grid;
         grid-template-columns: auto auto;
+    }
+    #juego{
+        display: flex;
+        flex-direction: column;
+    }
+    #preguntas{
+        width: 90%;
     }
     iframe{
         width: 300px;
