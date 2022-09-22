@@ -83,6 +83,10 @@ const videoM16 = new Videos(16,"Sf5_7xFPnEc","16/09/2022","Teoria de Conjuntos 7
 const videoM17 = new Videos(17,"OpzU-sLFCow","16/09/2022","Teoria de Conjuntos 8","Diferencia de Conjuntos")
 const videoM18 = new Videos(18,"bBP7lbs9jSA","16/09/2022","Teoria de Conjuntos 9", "Diferencia Simentrica de Conjuntos")
 const videoM19 = new Videos(19,"ixZCQU24sC0","16/09/2022","Teoria de Conjuntos 10","Producto Cartesiano entre conjuntos")
+const videoM20 = new Videos(20,"zvAaOhuXIuI","23/09/2022","Relaciones 1", "Relaciones Binarias")
+const videoM21 = new Videos(21,"vmXgYNUaxqA","23/09/2022","Relaciones 2","Relacion Inversion")
+const videoM22 = new Videos(22, "tSw7aJ-3hS4","23/09/2022","Relaciones 3", "Composicion de Relacion")
+
 
 const apunteMT1 = new ApuntesT(1,"11FKyBjjHMXqiwRs5N_zYokG_3fizW4-p","23/08/2022","Logica 1","Logica, Formulas Proposicionales, Leyes Logicas","Teorico",1,1,"1-19")
 const apunteMT2 = new ApuntesT(2,"1nPrMsmmqCMc2N2qItmjnnD4PgW49k5-h","30/08/2022","Logica 2","Razonamientos y sus metodos","Teorico",[2,3,4,5],1,"19-22")
@@ -94,15 +98,18 @@ const apunteMT7 = new ApuntesT(7,"1dx0josMbQhPW1_ICT88QNwi2yM_zSMnu","16/09/2022
 const apunteMT8 = new ApuntesT(8,"1ABjxKtjghVV0IfBNRU4ToUiY4zk-X7Ha","16/09/2022","Conjuntos 5", "Diferencia de Conjuntos","Teorico",17,2,"2 (a, b, c), 3 (a, b, c), 4 (c, d), 5 (d), 6, (a, b, c), 7 (a, b, c), 8 (d, e, f) y 10 (b, d)")
 const apunteMT9 = new ApuntesT(9,"1GOVJEAOItb_0yVeqj6ST0wQMsMM2XLti","16/09/2022","Conjuntos 6","Diferencia Simetrica","Teorico",18,2,"2 (f, g), 5 (e) y 11 ")
 const apunteMT10 = new ApuntesT(10,"1MEOkMDL-dPVfceVctZaNlQMwhQN31jTq","16/09/2022","Conjuntos 7","Producto Cartesiano","Teorico",19,2,"2 (f, g), 5 (e) y 11 ")
-
+const apunteMT11 = new ApuntesT(11,"1SccCLm5Nzy9UW6qzMrxN4RheA2cvD8Sq","23/09/2022","Relaciones 1","Relaciones Binarias, dominio e imagen","Teorico",[20,21],3,[1,2,3])
+const apunteMT12 = new ApuntesT(12,"1inWCCMPzolu1owndTkfpBcN3UoafsuD4","23/09/2022","Relaciones 2","Composicion de Relaciones","Teorico",22,3,[1,2,3])
 
 
 const apunteMP1 = new ApuntesP(1,"12NetAvDgn7barmTUuDTFfJkD5M8Ifz0R/","23/08/2022","Logica TP","Logica /Razonamientos / Formulas Proposicionales","Practico")
 const apunteMP2 = new ApuntesP(2,"1s5rky_xxbQ3SBTHv30Gg-IUU5cIH53Nf","09/09/2022","Conjuntos TP","Teoria de conjuntos / Union / Interseccion","Practico")
+const apunteMP3 = new ApuntesP(3,"1EcjjSxA4_-3S0RSBoNkwCfv9SuLR1pyS","23/09/2022","Relaciones","Relaciones entre conjuntos, binaria","Practico")
 
-matematica1.videos.push(videoM1,videoM2,videoM3,videoM4,videoM5, videoM6,videoM7, videoM8, videoM9, videoM10, videoM11,videoM12,videoM13, videoM14,videoM15, videoM16,videoM17, videoM18,videoM19)
-matematica1.apuntesteoricos.push(apunteMT1,apunteMT2,apunteMT3,apunteMT4,apunteMT5,apunteMT6, apunteMT7,apunteMT8,apunteMT9,apunteMT10)
-matematica1.apuntespracticos.push(apunteMP1,apunteMP2)
+
+matematica1.videos.push(videoM1,videoM2,videoM3,videoM4,videoM5, videoM6,videoM7, videoM8, videoM9, videoM10, videoM11,videoM12,videoM13, videoM14,videoM15, videoM16,videoM17, videoM18,videoM19, videoM20,videoM21,videoM22)
+matematica1.apuntesteoricos.push(apunteMT1,apunteMT2,apunteMT3,apunteMT4,apunteMT5,apunteMT6, apunteMT7,apunteMT8,apunteMT9,apunteMT10,apunteMT11,apunteMT12)
+matematica1.apuntespracticos.push(apunteMP1,apunteMP2, apunteMP3)
 
 //INTRODUCCIONPROGRAMACION
 const introduccionProgramacion = new Materias("Inpr","Introducción a la programación",8,"1BEQTT_9Lisq-PX6dEAGoclC6Nr1TjGF8","1n0fOy_9yfjjdQorwG4X_ZN1iOUSoO1XK",`<a href ="https://gobstones.github.io/gobstones-jr/?course=gobstones/curso-InPr-UNQ" target = "_blanck">Entorno Gobstone JR</a> ,<a href="https://gobstones.github.io/gobstones-sr/?course=gobstones/curso-InPr-UNQ" target= "_blank">Entorno Gobstone SR</a>`,"De las 8 hrs semanales se vuelven 6 ya que las dos correspondientes a los miercoles, es para que practiques en tu casa, igual se reservan ese dia y horario para que el examen sea ese dia. Examen en papel aunque todas las clases son en computadora, Si no sabes programar hasta parametros es relativamente facil despues de eso se complica un poco, Si sabes programar, lo que mas te va a costar son los contratos, la sintaxis y algunas cosas raras de gobstone. Clases totalmente invertidas, es decir, la forma de la clase es: indagacion, teoria y luego practica, la cual en clase presencial la idea es que sea solo practica, aunque los profesores te responden cualquier consulta que tengas, los contenidos se van desbloqueando semana a semana y tienen un campus virtual distinto al de la facultad (2022 mi caso)")
