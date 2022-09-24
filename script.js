@@ -12,6 +12,7 @@
 
 */
 const css = document.getElementById("css")
+const footer = document.querySelector("footer")
 const seccionModal = document.getElementById("seccionModal")
 const contenedorMaterias = document.getElementById("contenedorMaterias")
 const contenedorVideos = document.getElementById("grillaVideos")
@@ -350,12 +351,13 @@ function crearModal(){
     sacarModal.addEventListener("click",()=>{
         contenedorModal.style.display = "none"
         contenedorModal.style.opacity = "0"
+        footer.style.display="block"
     })
 
 }
 
 function usarModal(index,validez,respuesta){
-   
+    footer.style.display="none"
     validez ? iconModal.innerHTML = "✅": iconModal.innerHTML = "❌"
     
     textoCabecera.innerHTML = `${unidadSeleccionada.preguntas[index].pregunta}`
