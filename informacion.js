@@ -86,6 +86,7 @@ const videoM19 = new Videos(19,"ixZCQU24sC0","16/09/2022","Teoria de Conjuntos 1
 const videoM20 = new Videos(20,"zvAaOhuXIuI","23/09/2022","Relaciones 1", "Relaciones Binarias")
 const videoM21 = new Videos(21,"vmXgYNUaxqA","23/09/2022","Relaciones 2","Relacion Inversion")
 const videoM22 = new Videos(22, "tSw7aJ-3hS4","23/09/2022","Relaciones 3", "Composicion de Relacion")
+const videoM23= new Videos(23,"kqJhginNcqw","27/09/2022","Relaciones 4","Relaciones definidas en un conjunto")
 
 
 const apunteMT1 = new ApuntesT(1,"11FKyBjjHMXqiwRs5N_zYokG_3fizW4-p","23/08/2022","Logica 1","Logica, Formulas Proposicionales, Leyes Logicas","Teorico",1,1,"1-19")
@@ -100,15 +101,15 @@ const apunteMT9 = new ApuntesT(9,"1GOVJEAOItb_0yVeqj6ST0wQMsMM2XLti","16/09/2022
 const apunteMT10 = new ApuntesT(10,"1MEOkMDL-dPVfceVctZaNlQMwhQN31jTq","16/09/2022","Conjuntos 7","Producto Cartesiano","Teorico",19,2,"2 (f, g), 5 (e) y 11 ")
 const apunteMT11 = new ApuntesT(11,"1SccCLm5Nzy9UW6qzMrxN4RheA2cvD8Sq","23/09/2022","Relaciones 1","Relaciones Binarias, dominio e imagen","Teorico",[20,21],3,[1,2,3])
 const apunteMT12 = new ApuntesT(12,"1inWCCMPzolu1owndTkfpBcN3UoafsuD4","23/09/2022","Relaciones 2","Composicion de Relaciones","Teorico",22,3,[1,2,3])
-
+const apunteMT13 = new ApuntesT(13,"3gT6RjIXsslsSnZPI_JZ1dD_d32dVidx","27/09/2022","Relaciones 3","Relacione entre un conjunto","Teorico",23,3,"1,2,3,5")
 
 const apunteMP1 = new ApuntesP(1,"12NetAvDgn7barmTUuDTFfJkD5M8Ifz0R/","23/08/2022","Logica TP","Logica /Razonamientos / Formulas Proposicionales","Practico")
 const apunteMP2 = new ApuntesP(2,"1s5rky_xxbQ3SBTHv30Gg-IUU5cIH53Nf","09/09/2022","Conjuntos TP","Teoria de conjuntos / Union / Interseccion","Practico")
 const apunteMP3 = new ApuntesP(3,"1EcjjSxA4_-3S0RSBoNkwCfv9SuLR1pyS","23/09/2022","Relaciones","Relaciones entre conjuntos, binaria","Practico")
 
 
-matematica1.videos.push(videoM1,videoM2,videoM3,videoM4,videoM5, videoM6,videoM7, videoM8, videoM9, videoM10, videoM11,videoM12,videoM13, videoM14,videoM15, videoM16,videoM17, videoM18,videoM19, videoM20,videoM21,videoM22)
-matematica1.apuntesteoricos.push(apunteMT1,apunteMT2,apunteMT3,apunteMT4,apunteMT5,apunteMT6, apunteMT7,apunteMT8,apunteMT9,apunteMT10,apunteMT11,apunteMT12)
+matematica1.videos.push(videoM1,videoM2,videoM3,videoM4,videoM5, videoM6,videoM7, videoM8, videoM9, videoM10, videoM11,videoM12,videoM13, videoM14,videoM15, videoM16,videoM17, videoM18,videoM19, videoM20,videoM21,videoM22, videoM23)
+matematica1.apuntesteoricos.push(apunteMT1,apunteMT2,apunteMT3,apunteMT4,apunteMT5,apunteMT6, apunteMT7,apunteMT8,apunteMT9,apunteMT10,apunteMT11,apunteMT12, apunteMT13)
 matematica1.apuntespracticos.push(apunteMP1,apunteMP2, apunteMP3)
 
 //INTRODUCCIONPROGRAMACION
@@ -139,6 +140,7 @@ const apunteIT3 = new ApuntesT(3,"1rWhKM3giRjzjF2p218ZnQesEz3RV9qDx","30/08/2022
 const apunteIT4 = new ApuntesT(4,"1fqYF6hhwxvl9A-4pfc_i-O5DVPR907EP","06/09/2022","Tipos de datos","Tipos de datos, restricciones y nuevos operadores","Teorico",11,5,"Todos")
 const apunteIT5 = new ApuntesT(5,"1FHWkR4uo0mwIXyZsCF3Mi6SIZv3ghzjy","15/09/2022","Alternativa Condicional y Funciones Simples","Alternativa Condicional, Boleeanos, Funciones Simples","Teoria",[12,13,14],[6,7],"Todos")
 const apunteIT6 = new ApuntesT (6,"1GlaRaGrLGuSLn1HjOewOh3RujwTmSU1Q","20/09/2022","Repeticion Condicional","Repeticion COndicional  Recorridos","Teorico",[15,16],8,"Todos")
+const apunteIT7 = new ApuntesT(7,"1PUL-NnH4NL-oB8KtfDPk7evXhtFohOqi","27/09/2022","Variables y funciones con procesamiento","Variables y funciones complejas","Teorico",[17,18],8,"Todos")
 
 
 const apunteIP1 = new ApuntesP(1,"1muIGBNXQbLQExOoUdNUh2B0GO6UX9OUU","22/08/2022","Introduccion Gobstones","Conceptos basicos","Practico")
@@ -149,10 +151,11 @@ const apunteIP5 = new ApuntesP(5,"1gh2TvC0EZ6iWBZqzEF5atUkbsTv_GPEo","06/09/2022
 const apunteIP6 = new ApuntesP(6 ,"1Sel27vSbPD0a-ZvagLo_E_Iv_FMp31ce","15/09/2022","Alternativa Condicional","Condiciones y demas","Practico")
 const apunteIP7 = new ApuntesP(7,"14ZdqDixxb6PcJ6ukI4S7GoJph-CcwQQb","15/09/2022","Funciones Simple","Funciones simples ","Practico")
 const apunteIP8 = new ApuntesP(8,"1880uAjH23SvMldUT39KN9occrZPC8HnY","20/09/2022","Repeticion Condicional","Repeticion Condicional y Recorridos","Practico")
+const apunteIP9 = new ApuntesP(9,"1vmSzReihz6ftnyIQUyhjXvcw72ViR6Q9","27/09/2022","Variables y funciones con procesamiento","Variables y funciones complejas","Practico")
 
 introduccionProgramacion.videos.push(videoI1,videoI2,videoI3,videoI4,videoI5,videoI6,videoI7,videoI8,videoI9,videoI10, videoI11, videoI12, videoI13,videoI14, videoI15,videoI16, videoI17, videoI18)
-introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7, apunteIP8)
-introduccionProgramacion.apuntesteoricos.push(apunteIT1,apunteIT2,apunteIT3,apunteIT4, apunteIT5, apunteIT6)
+introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7, apunteIP8, apunteIP9)
+introduccionProgramacion.apuntesteoricos.push(apunteIT1,apunteIT2,apunteIT3,apunteIT4, apunteIT5, apunteIT6, apunteIT7)
 
 
 //TALLER TRABAJO UNIVERSITARIO
