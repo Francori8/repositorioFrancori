@@ -101,7 +101,7 @@ const apunteMT9 = new ApuntesT(9,"1GOVJEAOItb_0yVeqj6ST0wQMsMM2XLti","16/09/2022
 const apunteMT10 = new ApuntesT(10,"1MEOkMDL-dPVfceVctZaNlQMwhQN31jTq","16/09/2022","Conjuntos 7","Producto Cartesiano","Teorico",19,2,"2 (f, g), 5 (e) y 11 ")
 const apunteMT11 = new ApuntesT(11,"1SccCLm5Nzy9UW6qzMrxN4RheA2cvD8Sq","23/09/2022","Relaciones 1","Relaciones Binarias, dominio e imagen","Teorico",[20,21],3,[1,2,3])
 const apunteMT12 = new ApuntesT(12,"1inWCCMPzolu1owndTkfpBcN3UoafsuD4","23/09/2022","Relaciones 2","Composicion de Relaciones","Teorico",22,3,[1,2,3])
-const apunteMT13 = new ApuntesT(13,"3gT6RjIXsslsSnZPI_JZ1dD_d32dVidx","27/09/2022","Relaciones 3","Relacione entre un conjunto","Teorico",23,3,"1,2,3,5")
+const apunteMT13 = new ApuntesT(13,"13gT6RjIXsslsSnZPI_JZ1dD_d32dVidx","27/09/2022","Relaciones 3","Relacione entre un conjunto","Teorico",23,3,"1,2,3,5")
 
 const apunteMP1 = new ApuntesP(1,"12NetAvDgn7barmTUuDTFfJkD5M8Ifz0R/","23/08/2022","Logica TP","Logica /Razonamientos / Formulas Proposicionales","Practico")
 const apunteMP2 = new ApuntesP(2,"1s5rky_xxbQ3SBTHv30Gg-IUU5cIH53Nf","09/09/2022","Conjuntos TP","Teoria de conjuntos / Union / Interseccion","Practico")
