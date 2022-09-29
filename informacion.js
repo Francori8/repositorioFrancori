@@ -102,6 +102,9 @@ const apunteMT10 = new ApuntesT(10,"1MEOkMDL-dPVfceVctZaNlQMwhQN31jTq","16/09/20
 const apunteMT11 = new ApuntesT(11,"1SccCLm5Nzy9UW6qzMrxN4RheA2cvD8Sq","23/09/2022","Relaciones 1","Relaciones Binarias, dominio e imagen","Teorico",[20,21],3,[1,2,3])
 const apunteMT12 = new ApuntesT(12,"1inWCCMPzolu1owndTkfpBcN3UoafsuD4","23/09/2022","Relaciones 2","Composicion de Relaciones","Teorico",22,3,[1,2,3])
 const apunteMT13 = new ApuntesT(13,"13gT6RjIXsslsSnZPI_JZ1dD_d32dVidx","27/09/2022","Relaciones 3","Relacione entre un conjunto","Teorico",23,3,"1,2,3,5")
+const apunteMT14 = new ApuntesT(14,"1drl0zxMPHq6tuu_ntmatO08FwXYzV52I","30/09/2022","Relaciones 4","Relaciones de equivalencias","Teorico",24,3,"")
+const apunteMT15 = new ApuntesT(15,"14o6ZjCH0TWLGhKTSYKlPvWxToLivV3q3","30/09/2022","Relaciones 5","Relaciones de Orden","Teorico",25,3,"")
+
 
 const apunteMP1 = new ApuntesP(1,"12NetAvDgn7barmTUuDTFfJkD5M8Ifz0R/","23/08/2022","Logica TP","Logica /Razonamientos / Formulas Proposicionales","Practico")
 const apunteMP2 = new ApuntesP(2,"1s5rky_xxbQ3SBTHv30Gg-IUU5cIH53Nf","09/09/2022","Conjuntos TP","Teoria de conjuntos / Union / Interseccion","Practico")
@@ -109,7 +112,7 @@ const apunteMP3 = new ApuntesP(3,"1EcjjSxA4_-3S0RSBoNkwCfv9SuLR1pyS","23/09/2022
 
 
 matematica1.videos.push(videoM1,videoM2,videoM3,videoM4,videoM5, videoM6,videoM7, videoM8, videoM9, videoM10, videoM11,videoM12,videoM13, videoM14,videoM15, videoM16,videoM17, videoM18,videoM19, videoM20,videoM21,videoM22, videoM23)
-matematica1.apuntesteoricos.push(apunteMT1,apunteMT2,apunteMT3,apunteMT4,apunteMT5,apunteMT6, apunteMT7,apunteMT8,apunteMT9,apunteMT10,apunteMT11,apunteMT12, apunteMT13)
+matematica1.apuntesteoricos.push(apunteMT1,apunteMT2,apunteMT3,apunteMT4,apunteMT5,apunteMT6, apunteMT7,apunteMT8,apunteMT9,apunteMT10,apunteMT11,apunteMT12, apunteMT13, apunteMT14, apunteMT15)
 matematica1.apuntespracticos.push(apunteMP1,apunteMP2, apunteMP3)
 
 //INTRODUCCIONPROGRAMACION
