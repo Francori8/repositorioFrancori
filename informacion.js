@@ -155,6 +155,7 @@ const apunteIP6 = new ApuntesP(6 ,"1Sel27vSbPD0a-ZvagLo_E_Iv_FMp31ce","15/09/202
 const apunteIP7 = new ApuntesP(7,"14ZdqDixxb6PcJ6ukI4S7GoJph-CcwQQb","15/09/2022","Funciones Simple","Funciones simples ","Practico")
 const apunteIP8 = new ApuntesP(8,"1880uAjH23SvMldUT39KN9occrZPC8HnY","20/09/2022","Repeticion Condicional","Repeticion Condicional y Recorridos","Practico")
 const apunteIP9 = new ApuntesP(9,"1vmSzReihz6ftnyIQUyhjXvcw72ViR6Q9","27/09/2022","Variables y funciones con procesamiento","Variables y funciones complejas","Practico")
+const apunteIP10 = new ApuntesP(10,"1L59pzTE7EYiqGSl97SllHRIxhGSJvwet","06/10/2022","Ejercicios PreParcial","Gobs-Man, Ms. GobsMan, Integrador Zelda","Practico")
 
 introduccionProgramacion.videos.push(videoI1,videoI2,videoI3,videoI4,videoI5,videoI6,videoI7,videoI8,videoI9,videoI10, videoI11, videoI12, videoI13,videoI14, videoI15,videoI16, videoI17, videoI18)
 introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7, apunteIP8, apunteIP9)
