@@ -158,7 +158,7 @@ const apunteIP9 = new ApuntesP(9,"1vmSzReihz6ftnyIQUyhjXvcw72ViR6Q9","27/09/2022
 const apunteIP10 = new ApuntesP(10,"1L59pzTE7EYiqGSl97SllHRIxhGSJvwet","06/10/2022","Ejercicios PreParcial","Gobs-Man, Ms. GobsMan, Integrador Zelda","Practico")
 
 introduccionProgramacion.videos.push(videoI1,videoI2,videoI3,videoI4,videoI5,videoI6,videoI7,videoI8,videoI9,videoI10, videoI11, videoI12, videoI13,videoI14, videoI15,videoI16, videoI17, videoI18)
-introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7, apunteIP8, apunteIP9)
+introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7, apunteIP8, apunteIP9, apunteIP10)
 introduccionProgramacion.apuntesteoricos.push(apunteIT1,apunteIT2,apunteIT3,apunteIT4, apunteIT5, apunteIT6, apunteIT7)
 
 
