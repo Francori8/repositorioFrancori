@@ -156,6 +156,7 @@ const apunteIT5 = new ApuntesT(5,"1FHWkR4uo0mwIXyZsCF3Mi6SIZv3ghzjy","15/09/2022
 const apunteIT6 = new ApuntesT (6,"1GlaRaGrLGuSLn1HjOewOh3RujwTmSU1Q","20/09/2022","Repeticion Condicional","Repeticion COndicional  Recorridos","Teorico",[15,16],8,"Todos")
 const apunteIT7 = new ApuntesT(7,"1PUL-NnH4NL-oB8KtfDPk7evXhtFohOqi","27/09/2022","Variables y funciones con procesamiento","Variables y funciones complejas","Teorico",[17,18],8,"Todos")
 const apunteIT8 = new ApuntesT(8,"1w_z1MwdQC_TqP2m_Aa2qiD9OA4tJ23f9","11/10/2022","Registros y Variantes","Tipos de Datos Personalizados","Teorico",null,11,"Todos los ejercicios")
+const apunteIT9 = new ApuntesT(9,"1vLYZxeO9ssD2jc5xJjjwYefz3oRcEmU0","25/10/2022","Listas","Listas, recorridos","Teorico",null,12,"Todos")
 
 const apunteIP1 = new ApuntesP(1,"1muIGBNXQbLQExOoUdNUh2B0GO6UX9OUU","22/08/2022","Introduccion Gobstones","Conceptos basicos","Practico")
 const apunteIP2 = new ApuntesP(2,"1hvaH7FErP_VY4xv25pBn8IzNSO08ha3f","23/08/2022","Procedimientos","Procedimeintos, problemas y soluciones","Practico")
@@ -168,10 +169,11 @@ const apunteIP8 = new ApuntesP(8,"1880uAjH23SvMldUT39KN9occrZPC8HnY","20/09/2022
 const apunteIP9 = new ApuntesP(9,"1vmSzReihz6ftnyIQUyhjXvcw72ViR6Q9","27/09/2022","Variables y funciones con procesamiento","Variables y funciones complejas","Practico")
 const apunteIP10 = new ApuntesP(10,"1L59pzTE7EYiqGSl97SllHRIxhGSJvwet","06/10/2022","Ejercicios PreParcial","Gobs-Man, Ms. GobsMan, Integrador Zelda","Practico")
 const apunteIP11 = new ApuntesP(11,"1n6aIhIjG7Q2Gv-8VJ_tfXTrk6Stbz7Qy","11/10/2022","Tipos de Datos Personalizados","Tipos de Datos Personalizados","Practico")
+const apunteIP12 = new ApuntesP(12,"1bvVrP3qUlbGDuo4ILLyhyWEveqL48KNY","25/10/2022","Listas","Listas y recorridos","Practico")
 
 introduccionProgramacion.videos.push(videoI1,videoI2,videoI3,videoI4,videoI5,videoI6,videoI7,videoI8,videoI9,videoI10, videoI11, videoI12, videoI13,videoI14, videoI15,videoI16, videoI17, videoI18)
-introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7, apunteIP8, apunteIP9, apunteIP10, apunteIP11)
-introduccionProgramacion.apuntesteoricos.push(apunteIT1,apunteIT2,apunteIT3,apunteIT4, apunteIT5, apunteIT6, apunteIT7, apunteIT8)
+introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7, apunteIP8, apunteIP9, apunteIP10, apunteIP11, apunteIP12)
+introduccionProgramacion.apuntesteoricos.push(apunteIT1,apunteIT2,apunteIT3,apunteIT4, apunteIT5, apunteIT6, apunteIT7, apunteIT8, apunteIT9)
 
 
 //TALLER TRABAJO UNIVERSITARIO
