@@ -172,9 +172,10 @@ const apunteIP9 = new ApuntesP(9,"1vmSzReihz6ftnyIQUyhjXvcw72ViR6Q9","27/09/2022
 const apunteIP10 = new ApuntesP(10,"1L59pzTE7EYiqGSl97SllHRIxhGSJvwet","06/10/2022","Ejercicios PreParcial","Gobs-Man, Ms. GobsMan, Integrador Zelda","Practico")
 const apunteIP11 = new ApuntesP(11,"1n6aIhIjG7Q2Gv-8VJ_tfXTrk6Stbz7Qy","11/10/2022","Tipos de Datos Personalizados","Tipos de Datos Personalizados","Practico")
 const apunteIP12 = new ApuntesP(12,"1Wggckpj7m3xB_K1caO5kgEHOLCSNz-mf","25/10/2022","Listas","Listas y recorridos","Practico")
+const apunteIP13 = new ApuntesP(13,"1orKCA541Pp-AQGxtLgeghID9Fxxd9EWq","31/10/2022","Ejercicio PreParcial 2","Comidas Gobianas, Gobsmart, Pokemon","Practico")
 
 introduccionProgramacion.videos.push(videoI1,videoI2,videoI3,videoI4,videoI5,videoI6,videoI7,videoI8,videoI9,videoI10, videoI11, videoI12, videoI13,videoI14, videoI15,videoI16, videoI17, videoI18)
-introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7, apunteIP8, apunteIP9, apunteIP10, apunteIP11, apunteIP12)
+introduccionProgramacion.apuntespracticos.push(apunteIP1,apunteIP2,apunteIP3,apunteIP4,apunteIP5, apunteIP6, apunteIP7, apunteIP8, apunteIP9, apunteIP10, apunteIP11, apunteIP12, apunteIP13)
 introduccionProgramacion.apuntesteoricos.push(apunteIT1,apunteIT2,apunteIT3,apunteIT4, apunteIT5, apunteIT6, apunteIT7, apunteIT8, apunteIT9, apunteIT10, apunteIT11)
 
 
