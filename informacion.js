@@ -114,17 +114,19 @@ const apunteMT17 = new ApuntesT(17,"1Ck3d3cvsSCrhA0ItPgy1is6Jagttpkht","14/10/20
 const apunteMT18 = new ApuntesT(18,"1WZNSFBxw_CsVrlUu87anmiv3GcPxrPYJ","18/10/2022","Funciones 2","Igualdad de funciones, tipos de funciones","Teorico",26,5,"Todos")
 const apunteMT19 = new ApuntesT(19,"1LfPeY_zuMNa_wTCcUsM5qiTuy09rRraU","21/10/2022","Funciones 3","Composicion de Funciones","Teorico",27,"","")
 const apunteMT20 = new ApuntesT(20,"1sd_J_gPSZ8Xn3_yH7gXq2n7LqRihvdIJ","21/10/2022","Funicones 4","Funcion Inversa","Teorico",28,"","")
-
+const apunteMT22 = new ApuntesT(22,"16ZXZzcv2Gem90uv57m5kt6fjH5w6_QiT","11/11/2022","COmbinatorai 1", "Conbiantoria","Teorico",null,null,null)
 
 const apunteMP1 = new ApuntesP(1,"12NetAvDgn7barmTUuDTFfJkD5M8Ifz0R/","23/08/2022","Logica TP","Logica /Razonamientos / Formulas Proposicionales","Practico")
 const apunteMP2 = new ApuntesP(2,"1s5rky_xxbQ3SBTHv30Gg-IUU5cIH53Nf","09/09/2022","Conjuntos TP","Teoria de conjuntos / Union / Interseccion","Practico")
 const apunteMP3 = new ApuntesP(3,"1EcjjSxA4_-3S0RSBoNkwCfv9SuLR1pyS","23/09/2022","Relaciones","Relaciones entre conjuntos, binaria","Practico")
 const apunteMP4 = new ApuntesP(4,"18JhaU9aENk9copCSBgA3TcuKkT06YzgH","18/10/2022","Funciones TP","Funciones, composicion, inversa","Practico")
 const apunteMP5 = new ApuntesP(5,"1L_z2Xrgrdpj1tZoZ4knWpxU17sD9-HGT","18/10/2022","Funciones TP 2","Ejercictacion funciones","Practico")
+const apunteMP7 = new ApuntesP(7,"1tM2vmxB2zLc9-2EhoWRplbvIxhbKRnAz","11/11/2022","Combinatoria", "Combinatoria","Practico")
+
 
 matematica1.videos.push(videoM1,videoM2,videoM3,videoM4,videoM5, videoM6,videoM7, videoM8, videoM9, videoM10, videoM11,videoM12,videoM13, videoM14,videoM15, videoM16,videoM17, videoM18,videoM19, videoM20,videoM21,videoM22, videoM23, videoM24, videoM25,videoM26,videoM27,videoM28)
-matematica1.apuntesteoricos.push(apunteMT1,apunteMT2,apunteMT3,apunteMT4,apunteMT5,apunteMT6, apunteMT7,apunteMT8,apunteMT9,apunteMT10,apunteMT11,apunteMT12, apunteMT13, apunteMT14, apunteMT15,apunteMT16, apunteMT17, apunteMT18,apunteMT19, apunteMT20)
-matematica1.apuntespracticos.push(apunteMP1,apunteMP2, apunteMP3, apunteMP4, apunteMP5)
+matematica1.apuntesteoricos.push(apunteMT1,apunteMT2,apunteMT3,apunteMT4,apunteMT5,apunteMT6, apunteMT7,apunteMT8,apunteMT9,apunteMT10,apunteMT11,apunteMT12, apunteMT13, apunteMT14, apunteMT15,apunteMT16, apunteMT17, apunteMT18,apunteMT19, apunteMT20, apunteMT22)
+matematica1.apuntespracticos.push(apunteMP1,apunteMP2, apunteMP3, apunteMP4, apunteMP5, apunteMP7)
 
 //INTRODUCCIONPROGRAMACION
 const introduccionProgramacion = new Materias("Inpr","Introducción a la programación",8,"1BEQTT_9Lisq-PX6dEAGoclC6Nr1TjGF8","1n0fOy_9yfjjdQorwG4X_ZN1iOUSoO1XK",`<a href ="https://gobstones.github.io/gobstones-jr/?course=gobstones/curso-InPr-UNQ" target = "_blanck">Entorno Gobstone JR</a> ,<a href="https://gobstones.github.io/gobstones-sr/?course=gobstones/curso-InPr-UNQ" target= "_blank">Entorno Gobstone SR</a>`,"De las 8 hrs semanales se vuelven 6 ya que las dos correspondientes a los miercoles, es para que practiques en tu casa, igual se reservan ese dia y horario para que el examen sea ese dia. Examen en papel aunque todas las clases son en computadora, Si no sabes programar hasta parametros es relativamente facil despues de eso se complica un poco, Si sabes programar, lo que mas te va a costar son los contratos, la sintaxis y algunas cosas raras de gobstone. Clases totalmente invertidas, es decir, la forma de la clase es: indagacion, teoria y luego practica, la cual en clase presencial la idea es que sea solo practica, aunque los profesores te responden cualquier consulta que tengas, los contenidos se van desbloqueando semana a semana y tienen un campus virtual distinto al de la facultad (2022 mi caso)")
