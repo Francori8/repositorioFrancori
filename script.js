@@ -74,7 +74,7 @@ function cambiarColor(){
    
     if(getComputedStyle(root).getPropertyValue("--colorFondo") === "black"){
       root.style.setProperty("--colorLetra","black")
-      root.style.setProperty("--colorFondo","rgba(172, 172, 2, 0.774)")
+      root.style.setProperty("--colorFondo","#C7A836")
       imagen.style.filter = "drop-shadow(1px 1px 3px #000)"
 
     }else{
@@ -401,7 +401,6 @@ function cargarInformacion(){
                 <p class="margen10" style = "font-size: smaller;"> Observacion: ${materiaSeleccionada.observacion} </p>
             </div>
             <div id="links">
-                <a href="${materiaSeleccionada.cronograma}" target="archivosMaterias">Cronograma</a>
                 <a href="${materiaSeleccionada.programa}" target="archivosMaterias">Programa</a>
             </div>
     </div>

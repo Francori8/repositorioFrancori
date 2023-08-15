@@ -1,9 +1,9 @@
 class Materias{
-    constructor (id,nombre,cargaHoraria,cronograma,programa, linksUtiles = null, observacion){
+    constructor (id,nombre,cargaHoraria,programa, linksUtiles = null, observacion){
         this.id = id
         this.nombre = nombre
         this.cargaHoraria = cargaHoraria
-        this.cronograma = `https://docs.google.com/viewer?srcid=${cronograma}&pid=explorer&efh=false&a=v&chrome=false&embedded=true`
+        
         this.programa = `https://docs.google.com/viewer?srcid=${programa}&pid=explorer&efh=false&a=v&chrome=false&embedded=true`
         this.links = linksUtiles
         this.observacion = observacion
@@ -49,20 +49,23 @@ class ApuntesP {
 }
 
 class Videos{
-    constructor(indice,src,fecha,titulo,tema){
+    constructor(indice,srca,fecha,titulo,tema){
         this.indice = indice
-        this.src = `https://www.youtube.com/embed/${src}`
+        this.src = `https://www.youtube.com/embed/${srca}`
         this.fecha = fecha
         this.titulo = titulo
         this.tema = tema
        
+    }
+    cambiarVideosAOtraPlataforma(link){
+        this.src = link
     }
 }
 
 // Apuntes desde google drive "https://docs.google.com/viewer?srcid=[identificador]&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
 
 // MATEMATICA 1
-const matematica1 = new Materias("Mat1","Matemática 1",8,"1uT1fhQkMv1vXHHdp0v7QHHiUzOy0mOPz","1uT1fhQkMv1vXHHdp0v7QHHiUzOy0mOPz",null,"La materia es complicada, la base de EPyL es bastante util al principio, es mucha abstraccion, tu decide si eso es bueno o malo, aunque casi todos los temas son las bases de materias posteriores. La practica es la parte mas fundamental, ademas que hay ejercicios que no sabras si los estas justificando bien o mal. Las clases son teoricas/practicas, lo mejor para este tipo de materias, ademas del apoyo de los videos y los pdfs son bastantes entendibles, aunque las practicas ya es otro tema, aun asi si la sigues quizas no sea tan dificil (2022 mi caso)")
+const matematica1 = new Materias("Mat1","Matemática 1",8,"1uT1fhQkMv1vXHHdp0v7QHHiUzOy0mOPz",null,"La materia es complicada, la base de EPyL es bastante util al principio, es mucha abstraccion, tu decide si eso es bueno o malo, aunque casi todos los temas son las bases de materias posteriores. La practica es la parte mas fundamental, ademas que hay ejercicios que no sabras si los estas justificando bien o mal. Las clases son teoricas/practicas, lo mejor para este tipo de materias, ademas del apoyo de los videos y los pdfs son bastantes entendibles, aunque las practicas ya es otro tema, aun asi si la sigues quizas no sea tan dificil (2022 mi caso)")
 
 //Videos
 
@@ -142,7 +145,7 @@ matematica1.apuntesteoricos.push(apunteMT1,apunteMT2,apunteMT3,apunteMT4,apunteM
 matematica1.apuntespracticos.push(apunteMP1,apunteMP2, apunteMP3, apunteMP4, apunteMP5,apunteMP6, apunteMP7)
 
 //INTRODUCCIONPROGRAMACION
-const introduccionProgramacion = new Materias("Inpr","Introducción a la programación",8,"1BEQTT_9Lisq-PX6dEAGoclC6Nr1TjGF8","1n0fOy_9yfjjdQorwG4X_ZN1iOUSoO1XK",`<a href ="https://gobstones.github.io/gobstones-jr/?course=gobstones/curso-InPr-UNQ" target = "_blanck">Entorno Gobstone JR</a> ,<a href="https://gobstones.github.io/gobstones-sr/?course=gobstones/curso-InPr-UNQ" target= "_blank">Entorno Gobstone SR</a>`,"De las 8 hrs semanales se vuelven 6 ya que las dos correspondientes a los miercoles, es para que practiques en tu casa, igual se reservan ese dia y horario para que el examen sea ese dia. Examen en papel aunque todas las clases son en computadora, Si no sabes programar hasta parametros es relativamente facil despues de eso se complica un poco, Si sabes programar, lo que mas te va a costar son los contratos, la sintaxis y algunas cosas raras de gobstone. Clases totalmente invertidas, es decir, la forma de la clase es: indagacion, teoria y luego practica, la cual en clase presencial la idea es que sea solo practica, aunque los profesores te responden cualquier consulta que tengas, los contenidos se van desbloqueando semana a semana y tienen un campus virtual distinto al de la facultad (2022 mi caso)")
+const introduccionProgramacion = new Materias("Inpr","Introducción a la programación",8,"1n0fOy_9yfjjdQorwG4X_ZN1iOUSoO1XK",`<a href ="https://gobstones.github.io/gobstones-jr/?course=gobstones/curso-InPr-UNQ" target = "_blanck">Entorno Gobstone JR</a> ,<a href="https://gobstones.github.io/gobstones-sr/?course=gobstones/curso-InPr-UNQ" target= "_blank">Entorno Gobstone SR</a>`,"De las 8 hrs semanales se vuelven 6 ya que las dos correspondientes a los miercoles, es para que practiques en tu casa, igual se reservan ese dia y horario para que el examen sea ese dia. Examen en papel aunque todas las clases son en computadora, Si no sabes programar hasta parametros es relativamente facil despues de eso se complica un poco, Si sabes programar, lo que mas te va a costar son los contratos, la sintaxis y algunas cosas raras de gobstone. Clases totalmente invertidas, es decir, la forma de la clase es: indagacion, teoria y luego practica, la cual en clase presencial la idea es que sea solo practica, aunque los profesores te responden cualquier consulta que tengas, los contenidos se van desbloqueando semana a semana y tienen un campus virtual distinto al de la facultad (2022 mi caso)")
 
 const videoI1 = new Videos (1,"JWc58qgRh_A?list=PLfrTDBDj636aRNJQA19LB7paPuQX_QEpm","22/08/2022","Introduccion Gobstones 1","Concepto de gobstones, tablero, bolitas")
 const videoI2 = new Videos (2,"f54Jka4phCw?list=PLfrTDBDj636aRNJQA19LB7paPuQX_QEpm","22/08/2022","Introduccion Gobstones 2", "Gobston Jr a Sr")
@@ -196,7 +199,7 @@ introduccionProgramacion.apuntesteoricos.push(apunteIT1,apunteIT2,apunteIT3,apun
 
 //TALLER TRABAJO UNIVERSITARIO
 
-const tallerTabajoUniversitario = new Materias ("Ttu","Taller de Trabajo Universitario",2,"1s7Q4x-juOhCDfnXP4xyYZ7SvBIG_OQXo","1s7Q4x-juOhCDfnXP4xyYZ7SvBIG_OQXo",null,"La materia se trata sobre la historia de la Universidad en la Argentina, es full teorica, la clase es escuchar al profesor hablar y hablar, lo mas parecido a clase de historia, el tema no es tan aburrido como parece, aunque no esperes que realmente te den ganas de ir. En teoria no hay parciales, se hacen trabajos practicos, cada semana manda la clase escrita y videos, el profesor recomienda primero ver lo audiovisual y luego los textos (2022 mi caso)")
+const tallerTabajoUniversitario = new Materias ("Ttu","Taller de Trabajo Universitario",2,"1s7Q4x-juOhCDfnXP4xyYZ7SvBIG_OQXo",null,"La materia se trata sobre la historia de la Universidad en la Argentina, es full teorica, la clase es escuchar al profesor hablar y hablar, lo mas parecido a clase de historia, el tema no es tan aburrido como parece, aunque no esperes que realmente te den ganas de ir. En teoria no hay parciales, se hacen trabajos practicos, cada semana manda la clase escrita y videos, el profesor recomienda primero ver lo audiovisual y luego los textos (2022 mi caso)")
 
 const videoT1 = new Videos(1,"hyYz3tKSPPA","25/08/2022","Historia del sistema Universitario 1","Los Origenes (1600-1820)")
 const videoT2 = new Videos(2, "muF3fBNqFJs","03/09/2022", "Historia del sistema Universitario 2", "Ley Avellaneda (1820-1905)")
@@ -229,10 +232,133 @@ tallerTabajoUniversitario.videos.push(videoT1,videoT2,videoT3, videoT4, videoT5)
 tallerTabajoUniversitario.apuntesteoricos.push(apunteT1,apunteT2, apunteT3,apunteT4, apunteT5)
 tallerTabajoUniversitario.apuntespracticos.push(apunteTBO1,apunteTBO2,apunteTBO3,apunteTBO4,apunteTBO5,apunteTBO6,apunteTBO7,apunteTBO8,apunteTBO9,apunteTBO10, apunteTBO11)
 
+// ORGANIZACION DE COMPUTADORAS
 
+const orga = new Materias("Orga", "Organizacion de Computadoras", 6, "1zl-NYaHDeqwA4e4eycBC8z6NkdBvCanY" , `<a href=http://orga.blog.unq.edu.ar target = "_blanck">blog</a>`, "Muy buena materia, comoda con el alumno, no seguir a pie de letra el libro y las practicas porque la van actualizando siempre, el blog tiene toda informacion necesaria, Comision 2, Primer Cuatrimestre 2023")
+
+
+const videosOrga1 = new Videos(1,"","1/4/2023","Unidad 1","Sistema Binario")
+videosOrga1.cambiarVideosAOtraPlataforma("https://archive.org/details/UNQ-U1-bss")
+const videosOrga2 = new Videos(2,"","1/4/2023","Unidad 2","Q1 y ciclo de vida")
+videosOrga2.cambiarVideosAOtraPlataforma("https://archive.org/details/orga-ciclo-de-vida")
+const videosOrga3 = new Videos(3,"","1/4/2023","Unidad 3","Logica Digital")
+videosOrga3.cambiarVideosAOtraPlataforma("https://archive.org/details/UNQ-U3-logica-digital")
+const videosOrga4 = new Videos(4,"","1/4/2023","Unidad 4","Memoria Principal y Buses Q2")
+videosOrga4.cambiarVideosAOtraPlataforma("https://archive.org/details/UNQ-U4-memoria-buses")
+const videosOrga5 = new Videos(5,"","1/4/2023","Unidad 5","Rutinas Q3")
+videosOrga5.cambiarVideosAOtraPlataforma("https://archive.org/details/UNQ-U5-rutinas")
+const videosOrga6 = new Videos(6,"","1/4/2023","Unidad 6","Sistema Enteros")
+videosOrga6.cambiarVideosAOtraPlataforma("https://archive.org/details/u-6-sm")
+const videosOrga7 = new Videos(7,"","1/4/2023","Unidad 8","Mascaras-Repeticiones")
+videosOrga7.cambiarVideosAOtraPlataforma("https://archive.org/details/UNQ-u8-mascaras-repeticions")
+const videosOrga8 = new Videos(8,"","1/4/2023","Unidad 9","Arreglos")
+videosOrga8.cambiarVideosAOtraPlataforma("https://archive.org/details/UNQ-u9-arreglos")
+const videosOrga9 = new Videos(9,"","1/4/2023","Unidad 10","Subsistema de memoria, Memoria Cache")
+videosOrga9.cambiarVideosAOtraPlataforma("https://archive.org/details/UNQ-u10-memoria")
+const videosOrga10 = new Videos(10,"","1/4/2023","Unidad 11","Sistema Fraccionarios")
+videosOrga10.cambiarVideosAOtraPlataforma("https://archive.org/details/u-11-1-intro-punto-fijo")
+
+
+
+const apunteTOrga = new ApuntesT(1,"1Z2FwekNtOzq1c-ZuAWJL2P3hD9BSUlIj","1/7/2023","Libro de Orga UNQ V0.34","Sistema de numeracion, Logica Digital, Q1, Q2, Q3, Q4, Q5, Arreglos, Memoria Cache","Teorico","Todos","Todos","Todos")
+
+
+const apuntePOrga1 = new ApuntesP(1,"1DlIhcCmtQUG6L4x3UP8UVXfbO6CKH3oy","1/4/2023","Practica 1","Sistema de numeracion Natural","Practico")
+const apuntePOrga2 = new ApuntesP(2,"15ubyvojwBcCRylnZXXqQIP0NUg9X6crM","1/4/2023","Practica 2","Q1","Practico")
+const apuntePOrga3 = new ApuntesP(3,"1M4L9wjWJBP-FkjeZS_njxJagiaiOzoFb","1/4/2023","Practica 3","Logica Digital","Practico")
+const apuntePOrga4 = new ApuntesP(4,"1GbAzin9LT00xFAhYYB0TIP4xMQpuGOi9","1/4/2023","Practica 4","Q2","Practico")
+const apuntePOrga5 = new ApuntesP(5,"1BaRPGm5x-jpZpLHSZMnaxwaaUDlJ-Inx","1/4/2023","Practica 5","Sistemas Enteros","Practico")
+const apuntePOrga6 = new ApuntesP(6,"1bxbDGXrg_hiF6ScBaRNC1LZ-ZNy4KD4t","1/4/2023","Practica 6","Q3, Rutinas","Practico")
+const apuntePOrga7 = new ApuntesP(7,"1--mZK6yRBygoadvLTnIf-LXb_oucnZHs","1/4/2023","Practica 7","Q4, Saltos","Practico")
+const apuntePOrga8 = new ApuntesP(8,"1vlt7bsa-4GdkrRFjwFoJzEwwJ7VD2eTL","1/4/2023","Practica 8","Q5, Repeticiones y mascaras","Practico")
+const apuntePOrga9 = new ApuntesP(9,"1jNF7UXZlwS12Dc7eNT9hOPvX0eSOPd5t","1/4/2023","Practica 9","Q6, Arreglos","Practico")
+const apuntePOrga10 = new ApuntesP(10,"1fc_HtURAokHpoelCPDxtQ1YYMkFT1EZq","1/4/2023","Practica 10","Ssitemas Fraccionarios","Practico")
+const apuntePOrga11 = new ApuntesP(11,"1zu-Z0A7mu8_LP6hgIh6cLdQOPilLY0yS","1/4/2023","Practica 11","Memoria Cache","Practico")
+
+orga.videos.push(videosOrga1,videosOrga2,videosOrga3,videosOrga4,videosOrga5,videosOrga6,videosOrga7,videosOrga8,videosOrga9,videosOrga10)
+orga.apuntesteoricos.push(apunteTOrga)
+orga.apuntespracticos.push(apuntePOrga1,apuntePOrga2,apuntePOrga3,apuntePOrga4,apuntePOrga5,apuntePOrga6,apuntePOrga7,apuntePOrga8,apuntePOrga9,apuntePOrga10,apuntePOrga11)
+
+// ESTRUCTURA DE DATOS
+
+const estructuradDeDatos = new Materias("Estrd", "Estructura de Datos", 8,  "1DVThf_x4QrWbtlv3FEQLVjpCl7HpPCIq", "","")
+
+const videosEstrd1 = new Videos(1,"CW09lRWB1cY?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 1","Tipos Algebraicos")
+const videosEstrd2 = new Videos(2,"AuzMeB7XXE8?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 2","Listas y Recursion Estructural")
+const videosEstrd3 = new Videos(3,"EewENzmemDE?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 3","Tipos Algebraicos Recursivos")
+const videosEstrd4 = new Videos(4,"-uoj0NMj3fQ?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 4","Repaso 1")
+const videosEstrd5 = new Videos(5,"4oNVo2qcYk4?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 5","Tipos Abstractos de datos 1")
+const videosEstrd6 = new Videos(6,"hmXWEqI4HfQ?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 6","Tipos Abstractos de datos 2")
+const videosEstrd7 = new Videos(7,"aSQmW__iWpc?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 7","Tipos Abstractos de datos 3")
+const videosEstrd8 = new Videos(8,"BN28qFArYkw?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 8","Repaso 2")
+const videosEstrd9 = new Videos(9,"-AVvybCqFiE?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 9","Modelo Imperativo")
+const videosEstrd10 = new Videos(10,"abli7OdhazQ?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 10","Puntero y Arrays")
+const videosEstrd11 = new Videos(11,"zo9z5ngShvY?list=PL6lbGW3UNWzwDvcKTCyGlNBeEtHvdKzKk","1/4/2023","Clase 11","Linked List")
+
+
+
+const apunteTestrd1 = new ApuntesT(1,"1j9ovAKwbHFMbDgZT7MKcEPXKLm44d2w6","1/4/2023","Clase 1","Tipos Algebraicos","Teorico",1,1,"Todos")
+const apunteTestrd2 = new ApuntesT(2,"15Np56bMPyJ6M3KHizAF4hJgPknO-zBjK","1/4/2023","Clase 2","Listas y Recursion estructural","Teorico",2,2,"Todos")
+const apunteTestrd3 = new ApuntesT(3,"1HxiA6fTJTE9fSu8NF8BFimyDxvJLStgH","1/4/2023","Clase 3","Tipos Algebraicos recursivos y recursion estructural","Teorico",3,3,"Todos")
+const apunteTestrd4 = new ApuntesT(4,"13gIzyQx1nz2Au9VhcrfAchozk02HRkvu","1/4/2023","Clase 4","Repaso 1","Teorico",4,4,"Todos")
+const apunteTestrd5 = new ApuntesT(5,"17GfcVxKPlT7prlhfnv9cVQfHOnITalQ5","1/4/2023","Clase 5","Tipos Abstractos 1 (Stack, Queue, Set)","Teorico",5,5,"Todos")
+const apunteTestrd6 = new ApuntesT(6,"1Sp3x_WiItLwV-bq3dDKwbNkkcuXA5oAf","1/4/2023","Clase 6","Tipos Abstractos 2 (Multisets, Maps y Priority Queue)","Teorico",6,6,"Todos")
+const apunteTestrd7 = new ApuntesT(7,"1BPpYtQjP95rTk5ErHWH07J_P4Fcp3yU1","1/4/2023","Clase 7","Tipos Abstractos 3 (Heaps, BSTs y AVLs)","Teorico",7,7,"Todos")
+const apunteTestrd8 = new ApuntesT(8,"1DObebMQEcLvIvOYic8tGXVnLoqyNSyTq","1/4/2023","Clase 8","Repaso 2","Teorico",8,8,"Todos")
+const apunteTestrd9 = new ApuntesT(9,"1HMgy2qwRzQvzdCqpXzd6V7szSJJO3usE","1/4/2023","Clase 9","Modelo Imperativo","Teorico",9,9,"Todos")
+const apunteTestrd10 = new ApuntesT(10,"1JjGby5F1DjtcO77hWJsQaB7bMP3ngpAH","1/4/2023","Clase 10","Puntero y Arrays","Teorico",10,10,"Todos")
+const apunteTestrd11 = new ApuntesT(11,"14LbdZzYaDSydLek7S8xzY38LrgSN5AP0","1/4/2023","Clase 11","Linked List y arboles en imperativo","Teorico",11,11,"Todos")
+
+const apuntePestrd1 = new ApuntesP(1,"1MXNflDHKp8Fwt4UFabdIxv38W9gUDJ-F","1/4/2023","Practica 1","Tipos Algebraicos","Practico")
+const apuntePestrd2 = new ApuntesP(2,"1VVMRldVtH3G28sxIlhkx3iFWZoEP8c1N","1/4/2023","Practica 2","Listas y Recursion Estrucutral","Practico")
+const apuntePestrd3 = new ApuntesP(3,"1sDmFx4Mza7vmZNiRDPDPfycVizeCEYOL","1/4/2023","Practica 3","Tipos algebraicos recursivos","Practico")
+const apuntePestrd4 = new ApuntesP(4,"1Lxzfz9dSxjgXSrc1SyjjJnaLDr37vh5q","1/4/2023","Practica 4","Repaso","Practico")
+const apuntePestrd5 = new ApuntesP(5,"1Sx58qvHFNc0WVVDncjJ9pUIJkUfHiRUJ","1/4/2023","Practica 5","Tipos Abstractos 1","Practico")
+const apuntePestrd6 = new ApuntesP(6,"10g1itzC_qJNLMyHtH9U8xXrVuUKJJ_NN","1/4/2023","Practica 6","Tipos Abstractos 2","Practico")
+const apuntePestrd7 = new ApuntesP(7,"1uJ5IKmV1JVn8KbseHFAZ5lYtGNoTvQoe","1/4/2023","Practica 7","Heaps, Bsts","Practico")
+const apuntePestrd8 = new ApuntesP(8,"1N5iTESeI9nD4LieP8PnQM9EKPAZ5xSD","1/4/2023","Practica 8","Repaso 2 (unidos)","Practico")
+const apuntePestrd9 = new ApuntesP(9,"1T-9TLD1ndd90MoMnUBuKM_1AwEEyC53e","1/4/2023","Practica 9","Modelo Imperativo","Practico")
+const apuntePestrd10 = new ApuntesP(10,"1_x-b4r52_4mIMPJst4850TZ8JVffgmyh","1/4/2023","Practica 10","Puntero y Arrays","Practico")
+const apuntePestrd11 = new ApuntesP(11,"1c31s97Cu5f6Umy0kqQGBCB7qdSzDZsx8","1/4/2023","Practica 11","Linkedin list y arboles en impertativo","Practico")
+
+
+estructuradDeDatos.videos.push(videosEstrd1,videosEstrd2,videosEstrd3,videosEstrd4,videosEstrd5,videosEstrd6,videosEstrd7,videosEstrd8,videosEstrd9,videosEstrd10,videosEstrd11)
+estructuradDeDatos.apuntesteoricos.push(apunteTestrd1,apunteTestrd2,apunteTestrd3,apunteTestrd4,apunteTestrd5,apunteTestrd6,apunteTestrd7,apunteTestrd8,apunteTestrd9,apunteTestrd10,apunteTestrd11)
+estructuradDeDatos.apuntespracticos.push(apuntePestrd1,apuntePestrd2,apuntePestrd3,apuntePestrd4,apuntePestrd5,apuntePestrd6,apuntePestrd7,apuntePestrd8,apuntePestrd9,apuntePestrd10,apuntePestrd11)
+
+
+// PROGRAMACION ORIENTADA A OBJETOS 1
+
+const objetos1 = new Materias("obj1", "Programacion orientado a Objetos 1",8, "1go2lxBuBd8JZGamaMMTqZS6FQMKoif-F",`<a href="https://sites.google.com/view/unq-cpi-obj1-c1/home?authuser=0" target="_blank">Pagina de la materia</a>`,null)
+
+const apunteTobj1 = new ApuntesT(1,"1FbMbK0s67lSzHjA80Dklm1d6QTDo23jx","1/4/2023","Dispositivas Primera Clase","Principios Programacion orientada a Objetos","Teorica",null,null,null)
+const apunteTobj2 = new ApuntesT(2,"19QFQwrxQd546rAxdoryTj-8oQ69gN6Di","1/4/2023","Cuis University","Cuis University","Teorica",null,null,null)
+const apunteTobj3 = new ApuntesT(3,"173wK5NS7aV1eGcXGGDmx31KJDeKdOrxW","1/4/2023","TDD","Concepto y Utilidad del TDD","Teorica",null,null,null)
+const apunteTobj4 = new ApuntesT(4,"1WhSpvFnwW_BHdPQqk-Tv6O1OqXA8TuYs","1/4/2023","Delegacion y Doble Dispatch","Delegacion y Doble Dispatch","Teorica",null,null,null)
+const apunteTobj5 = new ApuntesT(5,"1gTnZ8gvYce9BlezCYQ-FSEs2YgmRVfno","1/4/2023","Colecciones","Distintas Colecciones y sus mensajes","Teorica",null,null,null)
+
+const apuntePobj1 = new ApuntesP(1,"1wcrS2t0L36fJP7OLaRsVeCn_gdqXH_es","1/4/2023","Practica 1","Objetos denotativos","Practico")
+const apuntePobj2 = new ApuntesP(2,"1hxCKlVlQgiFpEbhiu98dA9hQVx3Rf2Xw","1/4/2023","Practica 2","Clases y Colecciones","Practico")
+const apuntePobj3 = new ApuntesP(3,"1paqbXeLCbuUc_2gQaOXW5d9Wwm5vxObB","1/4/2023","Practica 3","Mas Clases","Practico")
+
+objetos1.apuntesteoricos.push(apunteTobj1,apunteTobj2,apunteTobj3,apunteTobj4,apunteTobj5)
+objetos1.apuntespracticos.push(apuntePobj1,apuntePobj2,apuntePobj3)
+
+// Redes de Computadoras
+
+const redes = new Materias("red","Redes de Computadoras",6,null,null,null)
+
+// Base de Datos
+
+const bsd = new Materias("bsd","Base de Datos", 6, null,null,null)
+
+
+// Matematica 2
+
+const mat2 = new Materias("mat2","Matematica 2",4,null,null, null)
 
 //REGISTRO DE MATERIAS
 
 let todasLasMaterias =[]
 
-todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario)
+todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1)

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root{
-    --colorFondo: rgba(172, 172, 2, 0.774);
+    --colorFondo: #C7A836;
     --colorLetra: black ; 
 }
 
@@ -16,6 +16,7 @@ body{
     background-color: var(--colorFondo);
     font-family: 'Roboto Mono', monospace;
     color: var(--colorLetra);
+    padding: 0px 5px;
     
     
 }
@@ -24,10 +25,10 @@ input{
     display: none; 
 }
 input:checked + label{
-    color: red;
+    color: rgb(255, 21, 21);
    
    
-    border: 3px solid red;
+    border: 3px solid rgb(255, 21, 21);
 }
 button{
     font-family: 'Silkscreen',cursive;
@@ -84,6 +85,7 @@ nav button{
     justify-content: space-between;
 }
 #contenedorMaterias{
+   
     display: flex;
     flex-wrap: wrap;
     background-color: transparent;
@@ -101,7 +103,9 @@ nav button{
     padding: 10px; 
     box-sizing: border-box;
     border-radius: 20px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .select:hover{
@@ -134,6 +138,7 @@ nav button{
 
 
 #home{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
