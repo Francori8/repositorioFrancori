@@ -352,6 +352,16 @@ const redes = new Materias("red","Redes de Computadoras",6,null,null,null)
 
 const bsd = new Materias("bsd","Base de Datos", 6, null,null,null)
 
+const apuntesTBsd1 = new ApuntesT(1,"146-2NBHdLUhsXDK2DO4Fxt7kVYt0zCNf","15/8/2023","Modelo Entidad Relacion","Introduccion Base de Datos","Teorico",null,1,"Todos")
+const apuntesTBsd2 = new ApuntesT(2,"1iQePHCYOxv48MXL2K4wPJ6KZOs-WXxbA","15/8/2023","Modelo Relacion 1","Introduccion Base de Datos","Teorico",null,1,"Todos")
+const apuntesTBsd3 = new ApuntesT(3,"1L2KZjxAZN6L1GoSd2MdD1NAvOmAynA4T","15/8/2023","Modelo Relacion 2","Introduccion Base de Datos","Teorico",null,1,"Todos")
+const apuntesTBsd4 = new ApuntesT(4,"1gMFGuvcjmcRO9eHDj0AHDxNK6XDms3q1","15/8/2023","Cardinalidad","Introduccion Base de Datos","Teorico",null,1,"Todos")
+
+const apuntesPBsd1 = new ApuntesP(1,"1BWmkOg9YsSCZTGmz9RquHtMToTYQ3ywc","15/8/2023","Practica 1","Practica mer-mr","Practico")
+const apuntesPBsd2 = new ApuntesP(2,"1cc7Hqmvq0r7SLlmSq2seQoDRq_zI4I-H","15/8/2023","Practica 2","Practica mr-sql","Practico")
+
+bsd.apuntesteoricos.push(apuntesTBsd1,apuntesTBsd2,apuntesTBsd3,apuntesTBsd4)
+bsd.apuntespracticos.push(apuntesPBsd1,apuntesPBsd2)
 
 // Matematica 2
 
