@@ -348,6 +348,22 @@ objetos1.apuntespracticos.push(apuntePobj1,apuntePobj2,apuntePobj3)
 
 const redes = new Materias("red","Redes de Computadoras",6,null,null,null)
 
+/*
+const videored1 = new Videos(1,"","15/8/2023","Introduccion 1","Redes y Modelo OSI")
+videored1.cambiarVideosAOtraPlataforma("https://nube.unq.edu.ar/s/EdxMgpSzBPyEFA6")
+const videored2 = new Videos(2,"","15/8/2023","Introduccion 2","Redes y Modelo OSI")
+videored2.cambiarVideosAOtraPlataforma("https://nube.unq.edu.ar/s/PeZJmMFQmFg3FYr")
+*/
+const apunteTred1 = new ApuntesT(1,"1Z7pXmYswsmvMHnKrNphWvl7M801cd_jJ","15/8/2023","Libro de la Materia","","Teorico",null,null,"")
+const apunteTred2 = new ApuntesT(2,"1b0BeBwpHjlmQ-yeGvmo0Pku_bK-1uMqP","15/8/2023","Presentacion","Intro Osi","Teorico",null,null,"")
+
+const apuntePred1 = new ApuntesP(1,"1R03B5OjEKKYUBIGpyrzu-vmwTHwYlp_B","15/8/2023","Practica 1","Introduccion","Practico")
+
+
+//redes.videos.push(videored1, videored2)
+redes.apuntespracticos.push(apuntePred1)
+redes.apuntesteoricos.push(apunteTred1, apunteTred2)
+
 // Base de Datos
 
 const bsd = new Materias("bsd","Base de Datos", 6, null,null,null)
