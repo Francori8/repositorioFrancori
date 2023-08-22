@@ -385,11 +385,13 @@ const mat2 = new Materias("mat2","Matematica 2",4,null,null, null)
 
 const apunteTmat2_1 = new ApuntesT(1,"133y5QjHSjAlnQOHUcbJyXO7Aq8OW6s95","15/8/2023","Matrices 1","Concepto de matrices, propiedades","Teorico",null,1,"1-?")
 const apunteTmat2_2 = new ApuntesT(2,"16-5o2U3fbrvnT96qOfjWrRKSGsLw2Jre","15/8/2023","Matrices 2","Producto de matrices","Teorico",null,1,"?-??")
+const apunteTmat2_3 = new ApuntesT(3,"","22/8/2023","Matrices 3","Matrices Inversas","Teorico",null,1,"??-???")
+
 
 const apuntePmate2_1 = new ApuntesP(1,"1RjjxT1ue2Aqs-QQrgnlgNIdlyUI8-9b_","15/8/2023","TP 1","Matrices","Practico")
 
 mat2.apuntespracticos.push(apuntePmate2_1)
-mat2.apuntesteoricos.push(apunteTmat2_1, apunteTmat2_2)
+mat2.apuntesteoricos.push(apunteTmat2_1, apunteTmat2_2, apunteTmat2_3)
 
 // Sistemas Operativos
 const so = new Materias("so","Sistemas Operativos",6, null, "","")
