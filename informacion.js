@@ -372,6 +372,7 @@ const apuntesTBsd1 = new ApuntesT(1,"146-2NBHdLUhsXDK2DO4Fxt7kVYt0zCNf","15/8/20
 const apuntesTBsd2 = new ApuntesT(2,"1iQePHCYOxv48MXL2K4wPJ6KZOs-WXxbA","15/8/2023","Modelo Relacion 1","Introduccion Base de Datos","Teorico",null,1,"Todos")
 const apuntesTBsd3 = new ApuntesT(3,"1L2KZjxAZN6L1GoSd2MdD1NAvOmAynA4T","15/8/2023","Modelo Relacion 2","Introduccion Base de Datos","Teorico",null,1,"Todos")
 const apuntesTBsd4 = new ApuntesT(4,"1gMFGuvcjmcRO9eHDj0AHDxNK6XDms3q1","15/8/2023","Cardinalidad","Introduccion Base de Datos","Teorico",null,1,"Todos")
+const apuntesTBsd5 = new ApuntesT(5,"1RqfOvng_d2cSnS39NDpo6f47BpPPXNSN","23/8/2023","DDL","Pasaje de MR a DDL","Teorico",null," ", " ")
 
 const apuntesPBsd1 = new ApuntesP(1,"1BWmkOg9YsSCZTGmz9RquHtMToTYQ3ywc","15/8/2023","Practica 1","Practica mer-mr","Practico")
 const apuntesPBsd2 = new ApuntesP(2,"1cc7Hqmvq0r7SLlmSq2seQoDRq_zI4I-H","15/8/2023","Practica 2","Practica mr-sql","Practico")
@@ -385,7 +386,7 @@ const mat2 = new Materias("mat2","Matematica 2",4,null,null, null)
 
 const apunteTmat2_1 = new ApuntesT(1,"133y5QjHSjAlnQOHUcbJyXO7Aq8OW6s95","15/8/2023","Matrices 1","Concepto de matrices, propiedades","Teorico",null,1,"1-?")
 const apunteTmat2_2 = new ApuntesT(2,"16-5o2U3fbrvnT96qOfjWrRKSGsLw2Jre","15/8/2023","Matrices 2","Producto de matrices","Teorico",null,1,"?-??")
-const apunteTmat2_3 = new ApuntesT(3,"","22/8/2023","Matrices 3","Matrices Inversas","Teorico",null,1,"??-???")
+const apunteTmat2_3 = new ApuntesT(3,"1RoieM7qOJkSNwpv6Xv-pPZ2mnC9iZWOc","22/8/2023","Matrices 3","Matrices Inversas","Teorico",null,1,"??-???")
 
 
 const apuntePmate2_1 = new ApuntesP(1,"1RjjxT1ue2Aqs-QQrgnlgNIdlyUI8-9b_","15/8/2023","TP 1","Matrices","Practico")
