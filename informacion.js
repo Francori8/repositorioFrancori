@@ -356,6 +356,7 @@ videored2.cambiarVideosAOtraPlataforma("https://nube.unq.edu.ar/s/PeZJmMFQmFg3FY
 */
 const apunteTred1 = new ApuntesT(1,"1Z7pXmYswsmvMHnKrNphWvl7M801cd_jJ","15/8/2023","Libro de la Materia","","Teorico",null,null,"")
 const apunteTred2 = new ApuntesT(2,"1b0BeBwpHjlmQ-yeGvmo0Pku_bK-1uMqP","15/8/2023","Presentacion","Intro Osi","Teorico",null,null,"")
+const apunteTred3 = new ApuntesT(3,"1R71uQKK4FS90pvI6gYNKQO09McCcnf65","23/8/2023","Capa de Aplicacion","Protocolos de aplicacion","Teorico",null,null," ")
 
 const apuntePred1 = new ApuntesP(1,"1R03B5OjEKKYUBIGpyrzu-vmwTHwYlp_B","15/8/2023","Practica 1","Introduccion","Practico")
 
