@@ -363,7 +363,7 @@ const apuntePred1 = new ApuntesP(1,"1R03B5OjEKKYUBIGpyrzu-vmwTHwYlp_B","15/8/202
 
 //redes.videos.push(videored1, videored2)
 redes.apuntespracticos.push(apuntePred1)
-redes.apuntesteoricos.push(apunteTred1, apunteTred2)
+redes.apuntesteoricos.push(apunteTred1, apunteTred2, apunteTred3)
 
 // Base de Datos
 
@@ -378,7 +378,7 @@ const apuntesTBsd5 = new ApuntesT(5,"1RqfOvng_d2cSnS39NDpo6f47BpPPXNSN","23/8/20
 const apuntesPBsd1 = new ApuntesP(1,"1BWmkOg9YsSCZTGmz9RquHtMToTYQ3ywc","15/8/2023","Practica 1","Practica mer-mr","Practico")
 const apuntesPBsd2 = new ApuntesP(2,"1cc7Hqmvq0r7SLlmSq2seQoDRq_zI4I-H","15/8/2023","Practica 2","Practica mr-sql","Practico")
 
-bsd.apuntesteoricos.push(apuntesTBsd1,apuntesTBsd2,apuntesTBsd3,apuntesTBsd4)
+bsd.apuntesteoricos.push(apuntesTBsd1,apuntesTBsd2,apuntesTBsd3,apuntesTBsd4, apuntesTBsd5)
 bsd.apuntespracticos.push(apuntesPBsd1,apuntesPBsd2)
 
 // Matematica 2
@@ -397,6 +397,29 @@ mat2.apuntesteoricos.push(apunteTmat2_1, apunteTmat2_2, apunteTmat2_3)
 
 // Sistemas Operativos
 const so = new Materias("so","Sistemas Operativos",6, null, "","")
+
+const videosSo1 = new Videos(1,"Gz5KVCGndXw?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Introduccion 1","Introduccion 1")
+const videosSo2 = new Videos(2,"WQ5PeRt8caM?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Introduccion 2","Introduccion 2")
+const videosSo3 = new Videos(3,"Z5CDSY0km5Q?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Procesos 1","Procesos 1")
+const videosSo4 = new Videos(4,"TrkvA4FWrAY?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Procesos 2","Procesos 2")
+const videosSo5 = new Videos(5,"4JKOiJJ8UJc?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Threads","Threads")
+const videosSo6 = new Videos(6,"bt6w757FJMk?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Practica IRQ Handlers","Practica IRQ Handlers")
+const videosSo7 = new Videos(7,"VAAdrLlXq7c?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","CPU Scheduleres 1","CPU Schedulers 1")
+const videosSo8 = new Videos(8,"KW7lLSSXaUM?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","CPU Schedulers 2","CPU Schedulers 2")
+const videosSo9 = new Videos(9,"CNcX30rYtl8?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Schedulers 3","Grafico de GANTT")
+const videosSo10 = new Videos(10,"ecksZI3QAqk?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Practica 4","Practica 4")
+const videosSo11 = new Videos(11,"VIVRVqXC2x8?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Memoria 1","Memoria - Sin Abstraccion")
+const videosSo12 = new Videos(12,"VVdlQeKPacY?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Memoria 2","Memoria - Asignacion Continua")
+const videosSo13 = new Videos(13,"mxqaeL0PX18?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Memoria 3","Memoria - Paginacion")
+const videosSo14 = new Videos(14,"oDP54QuE7P4?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Practica - Ejercicios","Paginacion: Direccionamiento")
+const videosSo15 = new Videos(15,"ItoML6qsL7k?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Practica 5","Practica 5")
+const videosSo16 = new Videos(16,"1294Rh6KpG4?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Memoria 4","Memoria - Paginacion Bajo Demanda")
+
+const apunteTSO1 = new ApuntesT(1,"16MARbSXvArV3yC_byNOseeHm9L5AN06y","28/8/2023","Introduccion","Introduccion de Sistemas Operativso","Teorico",1,1,"Todos")
+
+
+so.apuntesteoricos.push(apunteTSO1)
+so.videos.push(videosSo1,videosSo2,videosSo3,videosSo4,videosSo5,videosSo6,videosSo7,videosSo8,videosSo9,videosSo10,videosSo11,videosSo12,videosSo13,videosSo14,videosSo15,videosSo16)
 
 // Programacion Concurrente
 
