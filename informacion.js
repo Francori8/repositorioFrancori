@@ -359,10 +359,10 @@ const apunteTred2 = new ApuntesT(2,"1b0BeBwpHjlmQ-yeGvmo0Pku_bK-1uMqP","15/8/202
 const apunteTred3 = new ApuntesT(3,"1R71uQKK4FS90pvI6gYNKQO09McCcnf65","23/8/2023","Capa de Aplicacion","Protocolos de aplicacion","Teorico",null,null," ")
 
 const apuntePred1 = new ApuntesP(1,"1R03B5OjEKKYUBIGpyrzu-vmwTHwYlp_B","15/8/2023","Practica 1","Introduccion","Practico")
-
-
+const apuntePred2 = new ApuntesP(2,"15mcpdDnkoQuDRvu6Qa8WkIsnE8064Vaq","27/8/2023","Practica 2","DNS","Practico")
+const apuntePred3 = new ApuntesP(3,"1KUgoIZ_Tp9TwFmryrzgunEdF6jlcFeru","27/8/2023","Laboratorio 1","DNS","Practico")
 //redes.videos.push(videored1, videored2)
-redes.apuntespracticos.push(apuntePred1)
+redes.apuntespracticos.push(apuntePred1, apuntePred2,apuntePred3)
 redes.apuntesteoricos.push(apunteTred1, apunteTred2, apunteTred3)
 
 // Base de Datos
@@ -374,12 +374,17 @@ const apuntesTBsd2 = new ApuntesT(2,"1iQePHCYOxv48MXL2K4wPJ6KZOs-WXxbA","15/8/20
 const apuntesTBsd3 = new ApuntesT(3,"1L2KZjxAZN6L1GoSd2MdD1NAvOmAynA4T","15/8/2023","Modelo Relacion 2","Introduccion Base de Datos","Teorico",null,1,"Todos")
 const apuntesTBsd4 = new ApuntesT(4,"1gMFGuvcjmcRO9eHDj0AHDxNK6XDms3q1","15/8/2023","Cardinalidad","Introduccion Base de Datos","Teorico",null,1,"Todos")
 const apuntesTBsd5 = new ApuntesT(5,"1RqfOvng_d2cSnS39NDpo6f47BpPPXNSN","23/8/2023","DDL","Pasaje de MR a DDL","Teorico",null," ", " ")
+const apuntesTBsd6 = new ApuntesT(6,"12JfPRDkdZDpVOhYClSSLjLrrqUNmph9U","31/8/2023","Algebra Relacional 1","Algebra relacional Introduccion","Teorico",null,null,null)
+const apuntesTBsd7 = new ApuntesT(7,"1A51dQ2ycsCoPiexytHaoTahwFWwm4ub8","31/8/2023","Algebra Relacional 2","Algebra relacional Renombre 1","Teorico",null,null,null)
+const apuntesTBsd8 = new ApuntesT(8,"1T31MtAeQ2n1Y59aqjSTEuadOrgU5a99f","31/8/2023","Algebra Relacional 3","Algebra relacional Renombre 2","Teorico",null,null,null)
+
 
 const apuntesPBsd1 = new ApuntesP(1,"1BWmkOg9YsSCZTGmz9RquHtMToTYQ3ywc","15/8/2023","Practica 1","Practica mer-mr","Practico")
 const apuntesPBsd2 = new ApuntesP(2,"1cc7Hqmvq0r7SLlmSq2seQoDRq_zI4I-H","15/8/2023","Practica 2","Practica mr-sql","Practico")
+const apuntesPBsd3 = new ApuntesP(3,"1OhMRkRCzYGD-iV4ZJdMCGEj8FGrg8n0-","31/8/2023","Practica 3","Practica ar","Practico")
 
-bsd.apuntesteoricos.push(apuntesTBsd1,apuntesTBsd2,apuntesTBsd3,apuntesTBsd4, apuntesTBsd5)
-bsd.apuntespracticos.push(apuntesPBsd1,apuntesPBsd2)
+bsd.apuntesteoricos.push(apuntesTBsd1,apuntesTBsd2,apuntesTBsd3,apuntesTBsd4, apuntesTBsd5, apuntesTBsd6,apuntesTBsd7,apuntesTBsd8)
+bsd.apuntespracticos.push(apuntesPBsd1,apuntesPBsd2, apuntesPBsd3)
 
 // Matematica 2
 
