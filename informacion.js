@@ -396,8 +396,9 @@ const apunteTmat2_3 = new ApuntesT(3,"1RoieM7qOJkSNwpv6Xv-pPZ2mnC9iZWOc","22/8/2
 
 
 const apuntePmate2_1 = new ApuntesP(1,"1RjjxT1ue2Aqs-QQrgnlgNIdlyUI8-9b_","15/8/2023","TP 1","Matrices","Practico")
+const apuntePmate2_2 = new ApuntesP(2,"1MdZnNJPs8U-9Ks4uHSOR1x0JScwxxSEZ","5/9/2023","TP 2"," Sistema de ecuaciones Lineales","Practico")
 
-mat2.apuntespracticos.push(apuntePmate2_1)
+mat2.apuntespracticos.push(apuntePmate2_1, apuntePmate2_2)
 mat2.apuntesteoricos.push(apunteTmat2_1, apunteTmat2_2, apunteTmat2_3)
 
 // Sistemas Operativos
