@@ -348,12 +348,7 @@ objetos1.apuntespracticos.push(apuntePobj1,apuntePobj2,apuntePobj3)
 
 const redes = new Materias("red","Redes de Computadoras",6,null,null,null)
 
-/*
-const videored1 = new Videos(1,"","15/8/2023","Introduccion 1","Redes y Modelo OSI")
-videored1.cambiarVideosAOtraPlataforma("https://nube.unq.edu.ar/s/EdxMgpSzBPyEFA6")
-const videored2 = new Videos(2,"","15/8/2023","Introduccion 2","Redes y Modelo OSI")
-videored2.cambiarVideosAOtraPlataforma("https://nube.unq.edu.ar/s/PeZJmMFQmFg3FYr")
-*/
+
 const apunteTred1 = new ApuntesT(1,"1Z7pXmYswsmvMHnKrNphWvl7M801cd_jJ","15/8/2023","Libro de la Materia","","Teorico",null,null,"")
 const apunteTred2 = new ApuntesT(2,"1b0BeBwpHjlmQ-yeGvmo0Pku_bK-1uMqP","15/8/2023","Presentacion","Intro Osi","Teorico",null,null,"")
 const apunteTred3 = new ApuntesT(3,"1R71uQKK4FS90pvI6gYNKQO09McCcnf65","23/8/2023","Capa de Aplicacion","Protocolos de aplicacion","Teorico",null,null," ")
@@ -393,13 +388,21 @@ const mat2 = new Materias("mat2","Matematica 2",4,null,null, null)
 const apunteTmat2_1 = new ApuntesT(1,"133y5QjHSjAlnQOHUcbJyXO7Aq8OW6s95","15/8/2023","Matrices 1","Concepto de matrices, propiedades","Teorico",null,1,"1-?")
 const apunteTmat2_2 = new ApuntesT(2,"16-5o2U3fbrvnT96qOfjWrRKSGsLw2Jre","15/8/2023","Matrices 2","Producto de matrices","Teorico",null,1,"?-??")
 const apunteTmat2_3 = new ApuntesT(3,"1RoieM7qOJkSNwpv6Xv-pPZ2mnC9iZWOc","22/8/2023","Matrices 3","Matrices Inversas","Teorico",null,1,"??-???")
+const apunteTmat2_4 = new ApuntesT(4, "1dcBryEvhkg_qNe0a4Xi_PaTLxsD38iFD", "22/8/2023","Matrices 4","Determinantes","Teorico",null,"1","??-???")
+const apunteTmat2_5 = new ApuntesT(5, "1k5nKvMQScDxE8SCt9YrJXE2mVD-d5rm0", "05/9/2023","Sistema de ecuaciones","Sistema de ecuaciones","Teorico",null,"2","??-???")
+const apunteTmat2_6 = new ApuntesT(6, "1wKJ9aVvyzCbchlCQwx0eeiQzwMXrMKhp", "1/10/2023","Grupos","Grupos","Teorico",null,"3","??-???")
+const apunteTmat2_7 = new ApuntesT(7, "1YIBBQvd5xfBA585lzNEsRSn8MT-gY6zx", "15/10/2023","Espacios Vectoriales","Espacio vectoriales","Teorico",null,"4","??-???")
+const apunteTmat2_8 = new ApuntesT(8, "1BSP3nUI1KLaMcRgZ7_pS626WaaV4pyFh", "1/10/2023","Divisibilidad en enteros","Divisibilidad en enteros","Teorico",null,"3","??-???")
 
 
 const apuntePmate2_1 = new ApuntesP(1,"1RjjxT1ue2Aqs-QQrgnlgNIdlyUI8-9b_","15/8/2023","TP 1","Matrices","Practico")
-const apuntePmate2_2 = new ApuntesP(2,"1MdZnNJPs8U-9Ks4uHSOR1x0JScwxxSEZ","5/9/2023","TP 2"," Sistema de ecuaciones Lineales","Practico")
+const apuntePmate2_2 = new ApuntesP(2,"1MdZnNJPs8U-9Ks4uHSOR1x0JScwxxSEZ","5/9/2023","TP 2","Sistema de ecuaciones Lineales","Practico")
+const apuntePmate2_3 = new ApuntesP(3,"17Xru-IvyzE8G-vhyFJM-woxmACqhrljS","1/10/2023","TP 3","Grupo","Practico")
+const apuntePmate2_4 = new ApuntesP(4,"1TXqphH8QIUO7GzFg-zbhOr26I0HmyK9t","1/10/2023","TP 4","Espacio vectorial","Practico")
+const apuntePmate2_5 = new ApuntesP(5,"1NEhm_oVEI5ONvSqBJMVZeRVFNPS1SRcr","1/10/2023","TP 5","Divisibilidad en enteros","Practico")
 
-mat2.apuntespracticos.push(apuntePmate2_1, apuntePmate2_2)
-mat2.apuntesteoricos.push(apunteTmat2_1, apunteTmat2_2, apunteTmat2_3)
+mat2.apuntespracticos.push(apuntePmate2_1, apuntePmate2_2,apuntePmate2_3,apuntePmate2_4,apuntePmate2_5)
+mat2.apuntesteoricos.push(apunteTmat2_1, apunteTmat2_2, apunteTmat2_3 , apunteTmat2_4 , apunteTmat2_5 ,apunteTmat2_6 , apunteTmat2_7 , apunteTmat2_8)
 
 // Sistemas Operativos
 const so = new Materias("so","Sistemas Operativos",6, null, "","")
@@ -439,13 +442,13 @@ const apunteTconcu5 = new ApuntesT(5,"12_u65RGFS2_2G_buBW8RpWnOaJOqgqU8","15/8/2
 const apunteTconcu6 = new ApuntesT(6,"1cD3UxTxjkKSLzBdKBoEYsG1tmQ_8ZDpm","15/8/2023","PC.06","Monitores","Teorico",null,6,"Todos")
 const apunteTconcu7 = new ApuntesT(7,"1S-Lknei4HDC93X_Tu6VxTxSeiMhaFQdR","15/8/2023","PC.07","Mensajes","Teorico",null,7,"Todos")
 
-const apuntePconcu1 = new ApuntesP(1,"1KT65XBd0B9n_2BrFYbYSnre8w_NlfXBk","15/8/2023","Practia 1","Trazas","Practico")
-const apuntePconcu2 = new ApuntesP(2,"11Eu9bZmDLyQQ9DsiLbq8XbpnDwtCOCHP","15/8/2023","Practia 2","Mutex","Practico")
-const apuntePconcu3 = new ApuntesP(3,"11cAc4HY8huQHGWWdhTOkiiX8Io0PsG_Y","15/8/2023","Practia 3","Atomicidad","Practico")
-const apuntePconcu4 = new ApuntesP(4,"1vRMgijbAcRdJsjBRR96skTt9NDewQM81","15/8/2023","Practia 4","Semaforos 1","Practico")
-const apuntePconcu5 = new ApuntesP(5,"1fdFjfgEVQx3XBam82s1PKcHAmKQnzfCy","15/8/2023","Practia 5","Semaforos 2","Practico")
-const apuntePconcu6 = new ApuntesP(6,"1a5zF8xiHhTGPWLWXtn-IYCqL25AWTbXA","15/8/2023","Practia 6","Monitores","Practico")
-const apuntePconcu7 = new ApuntesP(7,"1z-a525r4pq7EWZL6PJ-7t2iAlBPgKDju","15/8/2023","Practia 7","Mensajes","Practico")
+const apuntePconcu1 = new ApuntesP(1,"1KT65XBd0B9n_2BrFYbYSnre8w_NlfXBk","15/8/2023","Practica 1","Trazas","Practico")
+const apuntePconcu2 = new ApuntesP(2,"11Eu9bZmDLyQQ9DsiLbq8XbpnDwtCOCHP","15/8/2023","Practica 2","Mutex","Practico")
+const apuntePconcu3 = new ApuntesP(3,"11cAc4HY8huQHGWWdhTOkiiX8Io0PsG_Y","15/8/2023","Practica 3","Atomicidad","Practico")
+const apuntePconcu4 = new ApuntesP(4,"1vRMgijbAcRdJsjBRR96skTt9NDewQM81","15/8/2023","Practica 4","Semaforos 1","Practico")
+const apuntePconcu5 = new ApuntesP(5,"1fdFjfgEVQx3XBam82s1PKcHAmKQnzfCy","15/8/2023","Practica 5","Semaforos 2","Practico")
+const apuntePconcu6 = new ApuntesP(6,"1a5zF8xiHhTGPWLWXtn-IYCqL25AWTbXA","15/8/2023","Practica 6","Monitores","Practico")
+const apuntePconcu7 = new ApuntesP(7,"1z-a525r4pq7EWZL6PJ-7t2iAlBPgKDju","15/8/2023","Practica 7","Mensajes","Practico")
 
 progconcu.apuntespracticos.push(apuntePconcu1,apuntePconcu2,apuntePconcu3,apuntePconcu4,apuntePconcu5,apuntePconcu6,apuntePconcu7)
 progconcu.apuntesteoricos.push(apunteTconcu1,apunteTconcu2,apunteTconcu3,apunteTconcu4,apunteTconcu5,apunteTconcu6,apunteTconcu7)
