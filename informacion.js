@@ -453,8 +453,32 @@ const apuntePconcu7 = new ApuntesP(7,"1z-a525r4pq7EWZL6PJ-7t2iAlBPgKDju","15/8/2
 progconcu.apuntespracticos.push(apuntePconcu1,apuntePconcu2,apuntePconcu3,apuntePconcu4,apuntePconcu5,apuntePconcu6,apuntePconcu7)
 progconcu.apuntesteoricos.push(apunteTconcu1,apunteTconcu2,apunteTconcu3,apunteTconcu4,apunteTconcu5,apunteTconcu6,apunteTconcu7)
 
+// Programacion Funcional
+
+const progFunc = new Materias("progfunc", "Programacion Funcional", 4 , null ,"", "")
+// Videos
+progFunc.videos.push(
+    new Videos(1,"CFuvy-w9o6I","6/7/2024","1 Clase Teorica Funcional","Modelo Funcional, Alto Orden"),
+    new Videos(2,"bIx0Zi8YjMY","6/7/2024","2 Clase Teorica Funcional","Sistema de Tipos"),
+    new Videos(3,"gthqrFWG6oA","6/7/2024","3 Clase Teorica Funcional","Currificacion"),
+    new Videos(4,"u_Q1dP2g5FQ","6/7/2024","4 Clase Teorica Funcional","Reduccion"), 
+    new Videos(5,"d-DocFmRdQc","6/7/2024","5 Clase Teorica Funcional","Tipos  Algebraicos"),
+    new Videos(6,"vrae0isqwNM","6/7/2024","6 Clase Teorica Funcional","Propiedades y Demostraciones"),
+    new Videos(7,"9piJQAaWCpk","6/7/2024","7 Clase Teorica Funcional","Induccion y recursion 1"),
+    new Videos(8,"b2gKGcvq_bo","6/7/2024","8 Clase Teorica Funcional","Induccion y recursion 2"),
+    new Videos(9,"9CIqSAVran8","6/7/2024","9 Clase Teorica Funcional","Induccion y recursion 3"),
+    new Videos(10,"B6D2rkBw1uo","6/7/2024","10 Clase Teorica Funcional","Induccion y recursion 4"),
+    new Videos(11,"OrrzkDNzVW8","6/7/2024","9 Clase Teorica Funcional","Esquema de funciones 1"),
+    new Videos(12,"L3gU250guP4","6/7/2024","10 Clase Teorica Funcional","Esquema de funciones 2"),
+    new Videos(13,"FaLO_tlI4oI","6/7/2024","9 Clase Teorica Funcional","Monadas"),
+    new Videos(14,"28QX5EUabDQ","6/7/2024","10 Clase Teorica Funcional","Calculo Lambda")
+
+)
+
+const apunteTfunc1 = new ApuntesT(1, "","" ,"","","","","","")
+
 //REGISTRO DE MATERIAS
 
 let todasLasMaterias =[]
 
-todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1,redes, bsd, mat2, so , progconcu)
+todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1,redes, bsd, mat2, so , progconcu , progFunc)
