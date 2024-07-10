@@ -47,6 +47,9 @@ const root = document.documentElement
 const cambioColor = document.getElementById("cambiarColor")
 cambioColor.addEventListener("click",cambiarColor)
 
+const cambioColor2 = document.getElementById("cambiarColor2")
+cambioColor2.addEventListener("click",cambiarColor2)
+
 volver.addEventListener("click",volverAlInicio)
 botonIrApuntes.addEventListener("click",apartadoApunte)
 botonIrVideo.addEventListener("click",apartadoVideos)
@@ -73,7 +76,7 @@ let escritura
 function cambiarColor(){
    
     if(getComputedStyle(root).getPropertyValue("--colorFondo") === "black"){
-      root.style.setProperty("--colorLetra","black")
+      root.style.setProperty("--colorLetra","rgb(36, 36, 36)")
       root.style.setProperty("--colorFondo","#C7A836")
       imagen.style.filter = "drop-shadow(1px 1px 3px #000)"
 
@@ -84,10 +87,25 @@ function cambiarColor(){
     }
     
 }
+function cambiarColor2(){
+   
+    if(getComputedStyle(root).getPropertyValue("--colorFondo") === "gray"){
+      root.style.setProperty("--colorLetra","rgb(36, 36, 36)")
+      root.style.setProperty("--colorFondo","#C7A836")
+      imagen.style.filter = "drop-shadow(1px 1px 3px #000)"
+
+    }else{
+        //#503f30
+        root.style.setProperty("--colorLetra","rgb(36, 36, 36)")
+        root.style.setProperty("--colorFondo","gray")
+        imagen.style.filter = "drop-shadow(1px 1px 3px #000)"
+    }
+    
+}
 
 
 function apartadoVideos(){
-  
+    //materiaSeleccionada = todasLasMaterias.find(mat => document.getElementById(mat.id).checked)
     todasLasMaterias.forEach((materia)=>{
         if (document.getElementById(materia.id).checked){
             materiaSeleccionada = materia
