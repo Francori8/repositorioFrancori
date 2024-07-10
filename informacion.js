@@ -364,6 +364,19 @@ redes.apuntesteoricos.push(apunteTred1, apunteTred2, apunteTred3)
 
 const bsd = new Materias("bsd","Base de Datos", 6, null,null,null)
 
+bsd.videos.push(
+    new Videos(1,"IaSKuNzFHEg","6/7/2024","1 Clase Teorica BSD","Introduccion de DBMS"),
+    new Videos(2,"RH7UJeZHbA0","6/7/2024","2 Clase Teorica BSD","MER"),
+    new Videos(3,"BPT8oeF0LnM","6/7/2024","3 Clase Teorica BSD","MR: Modelo relacional"),
+    new Videos(4,"f6B-uKeKXmA","6/7/2024","4 Clase Teorica BSD","MR: mapeo de entidades y relaciones MER"),
+    new Videos(5,"31XrdUYiYQw","6/7/2024","5 Clase Teorica BSD","MR: relaciones recursivas"),
+    new Videos(6,"zfctP6PpJsw","6/7/2024","6 Clase Teorica BSD","MER, MR ,SQL/DDL"),
+    new Videos(7,"NsqnkUGZLMM","6/7/2024","7 Clase Teorica BSD","SQL - Clase 1"),
+    new Videos(8,"-9eiwxURAvQ","6/7/2024","8 Clase Teorica BSD","SQL - Clase 2"),
+    new Videos(9,"9FROGCaFaEQ","6/7/2024","9 Clase Teorica BSD","SQL - Clase 3"),
+    new Videos(10,"uK_Wj-Tip-s","6/7/2024","10 Clase Teorica BSD","SQL - Clase 4"),
+)
+
 const apuntesTBsd1 = new ApuntesT(1,"146-2NBHdLUhsXDK2DO4Fxt7kVYt0zCNf","15/8/2023","Modelo Entidad Relacion","Introduccion Base de Datos","Teorico",null,1,"Todos")
 const apuntesTBsd2 = new ApuntesT(2,"1iQePHCYOxv48MXL2K4wPJ6KZOs-WXxbA","15/8/2023","Modelo Relacion 1","Introduccion Base de Datos","Teorico",null,1,"Todos")
 const apuntesTBsd3 = new ApuntesT(3,"1L2KZjxAZN6L1GoSd2MdD1NAvOmAynA4T","15/8/2023","Modelo Relacion 2","Introduccion Base de Datos","Teorico",null,1,"Todos")
@@ -424,15 +437,37 @@ const videosSo14 = new Videos(14,"oDP54QuE7P4?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHI
 const videosSo15 = new Videos(15,"ItoML6qsL7k?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Practica 5","Practica 5")
 const videosSo16 = new Videos(16,"1294Rh6KpG4?list=PLA6U-4x2PwVZDJ57VFEk4_i4xSHIFaNcC","28/8/2023","Memoria 4","Memoria - Paginacion Bajo Demanda")
 
-const apunteTSO1 = new ApuntesT(1,"16MARbSXvArV3yC_byNOseeHm9L5AN06y","28/8/2023","Introduccion","Introduccion de Sistemas Operativso","Teorico",1,1,"Todos")
+so.apuntesteoricos.push(
+    new ApuntesT(1,"16MARbSXvArV3yC_byNOseeHm9L5AN06y","28/8/2023","Clase 1","Introduccion de Sistemas Operativso","Teorico",[1,2],2,"Todos"),
+    new ApuntesT(2,"1W2Yp1L8OU4a5Ek8YR8jjZjSigwG8qobc","28/8/2023","Clase 2-1","Procesos","Teorico",[3,4],2,"Todos"),
+    new ApuntesT(3,"1Ym1wUJwrJxT27xazChyD3ywqBhzzI17I","28/8/2023","Clase 2-2","Threads","Teorico",5,2,"Todos"),
+    new ApuntesT(4,"1qmw3CepJMZc5UrVuKWqE9Cf0i42qQvj-","28/8/2023","Clase 3","Scheduling","Teorico",[7,8,9],3,"Todos"),
+    new ApuntesT(5,"14UpeTSiTiALtvgrtdMAYY1_VEc-BmYFL","28/8/2023","Clase 4","Memoria","Teorico",[11,12],4,"Todos"),
+    new ApuntesT(6,"161UYSXSqQvQ3EngPBpzZVgKkYO-UJFhF","28/8/2023","Clase 5","Paginacion","Teorico",13,4,"Todos"),
+    new ApuntesT(7,"13k-kt-t_-671_PCtF49NVK1rj0t_g30X","28/8/2023","Clase 6","Memoria Virtual","Teorico",16,5,"Todos")
+)
+
+so.apuntespracticos.push(
+    new ApuntesP(1,"1XwKhMHqZIodLQ_vQoNMlubPLAl5vmtxz","28/8/2023","Practica1","Introduccion de Sistemas Operativso","Practica"),
+    new ApuntesP(2,"1ZpNltKWLXpTVfwrlt3avPMB1ZicpetTh","28/8/2023","Practica 2","Procesos","Practica"),
+    new ApuntesP(3,"17TSMXSkHBTnoZFmWpIsKfvmLYydeRoq7","28/8/2023","Practica 3","Scheduling","Practica"),
+    new ApuntesP(4,"155MbB1kn0IJ2esQxnWYZ9_kyywq0pJmn","28/8/2023","Practica 4","Memoria","Practica"),
+    new ApuntesP(5,"1iJ8g4tbU-5Hn1-vIthbdHgSMqagVgBPC","28/8/2023","Practica 5","Paginacion","Practica"),
+    new ApuntesP(6,"168uSjA9WmJl8pgSwXMeduvKm1oiQzZ3M","28/8/2023","Practica 6","Memoria Virtual","Practica")
+)
 
 
-so.apuntesteoricos.push(apunteTSO1)
+
 so.videos.push(videosSo1,videosSo2,videosSo3,videosSo4,videosSo5,videosSo6,videosSo7,videosSo8,videosSo9,videosSo10,videosSo11,videosSo12,videosSo13,videosSo14,videosSo15,videosSo16)
 
 // Programacion Concurrente
 
 const progconcu = new Materias("progconcu","Programacion Concurrente",4, null, "","")
+
+progconcu.videos.push(
+   
+
+)
 
 const apunteTconcu1 = new ApuntesT(1,"1WfiaYfkrN1zwWxZ8dLx4elB3mUGLhNUz","15/8/2023","PC.01","Introduccion","Teorico",null,1,"Todos")
 const apunteTconcu2 = new ApuntesT(2,"1nGWO1QvUsAQ4KLtO2d1gAyjEmo9hbDVq","15/8/2023","PC.02","Exclusion Mutua","Teorico",null,2,"Todos")
@@ -474,8 +509,38 @@ progFunc.videos.push(
     new Videos(14,"28QX5EUabDQ","6/7/2024","10 Clase Teorica Funcional","Calculo Lambda")
 
 )
+progFunc.apuntesteoricos.push(
+    new ApuntesT(1, "1A-qaTDJZ45bVmtMKRCPIohNIESe7MPnA","6/7/2024" ,"Clase teorico 1","Modelo Funcional","Teorico",1,1,"Todos"),
+    new ApuntesT(2, "127QqqKiAZXCK7toxdoBpsD0pRCyGRPNT","6/7/2024" ,"Clase teorico 2","Sistema de tipos","Teorico",2,2,"Todos"),
+    new ApuntesT(3, "1AjEVjXJU659JBqlVqlQO9s6cKbeF9df3","6/7/2024" ,"Clase teorico 3","Currificacion","Teorico",3,3,"Todos"),
+    new ApuntesT(4, "136UecSUZsJ9d_APqtDe_yCd9sshys155","6/7/2024" ,"Clase teorico 4","Reduccion","Teorico",4,4,"Todos"),
+    new ApuntesT(5, "10YkN3O_NeohE6CTMj1aVy6exUr0ChYYZ","6/7/2024" ,"Clase teorico 5","Tipos Algebraicos","Teorico",5,5,"Todos"),
+    new ApuntesT(6, "103Yu6Hq44FbwJLLYax7y0O_AOg6GPoT5","6/7/2024" ,"Clase teorico 6","Propiedades y Demostraciones","Teorico",6,6,"Todos"),
+    new ApuntesT(7, "14mhHYFVd2JhM7l6FfmdyoYQKSuUHTNM8","6/7/2024" ,"Clase teorico 7","Induccion y recursion 1","Teorico",7,7,"Todos"),
+    new ApuntesT(8, "1_VPvJZqUVmdagYxGyPugNWXFa1NXnI2T","6/7/2024" ,"Clase teorico 8","Induccion y recursion 2","Teorico",8,8,"Todos"),
+    new ApuntesT(9, "1jYElgkj2zwwXMKwhNQVbkvGvBPCmPkr0","6/7/2024" ,"Clase teorico 9","Induccion y recursion 3","Teorico",9,9,"Todos"),
+    new ApuntesT(10, "1k-RUw2_Eg2KGD78F7KiStJ5GjRHYbfBv","6/7/2024" ,"Clase teorico 10","Induccion y recursion 4","Teorico",10,10,"Todos"),
+    new ApuntesT(11, "11PjgXCrzYMaRDhOMc0KRuuFNsCbSv-6u","6/7/2024" ,"Clase teorico 11","Esquema de funciones 1","Teorico",11,11,"Todos"),
+    new ApuntesT(12, "1pr-JaReKmYe6HuVKgIFYaoe9WWp6zQ5V","6/7/2024" ,"Clase teorico 12","Esquema de funciones 2","Teorico",12,12,"Todos"),
+    new ApuntesT(13, "19W37tbHxTJXFkt82cwki2HiSXmB_IqTk","6/7/2024" ,"Clase teorico 13","Monadas","Teorico",13,13,"Todos"),
+    new ApuntesT(14, "1FHyZnsMKyYR1U2ygimipA0hIOFtWwTsx","6/7/2024" ,"Clase teorico 14","Calculo Lambda","Teorico",14,14,"Todos")
+)
+progFunc.apuntespracticos.push(
+new ApuntesP(1, "1F5s1YnFpUCDPJ9SZo6mPgYqZPZWaDZZc","6/7/2024" ,"Clase practica 1","Modelo Funcional","Practico"),
+new ApuntesP(2, "1b34qBVRKkP6xQMl4r2hK56elKhWcc1Vr","6/7/2024" ,"Clase practica 2","Sistema de tipos","Practico"),
+new ApuntesP(3, "1OxGW9-44k4AgCOwv1DGzkYPSaGu4-vss","6/7/2024" ,"Clase practica 3","Currificacion","Practico"),
+new ApuntesP(4, "1uaCdh7UMUko8UYWblIqC8c21LTGXrgJr","6/7/2024" ,"Clase practica 4","Reduccion","Practico"),
+new ApuntesP(5, "15fArKEg5AMpj0SfLejfwcRMpgo7-FB0V","6/7/2024" ,"Clase practica 5","Tipos Algebraicos","Practico"),
+new ApuntesP(6, "1fL5-x-6InHULb5nWNXBWNw_OZkfcivAU","6/7/2024" ,"Clase practica 6","Propiedades y Demostraciones","Practico"),
+new ApuntesP(7, "1d5HZ8cm4TIINLhie0sPllXG8u0OFJ7Kh","6/7/2024" ,"Clase practica 7","Induccion y recursion 1","Practico"),
+new ApuntesP(8, "16cwGBctit_f7Fpre1bGsK_9IZ46RSIG5","6/7/2024" ,"Clase practica 8","Induccion y recursion 2","Practico"),
+new ApuntesP(9, "1NfOVzY7qNt6n_YdJeTgxXxMUoZA_wjhJ","6/7/2024" ,"Clase practica 9","Induccion y recursion 3","Practico"),
+new ApuntesP(10, "1WYs8V2H6QsY95kjMrYAGNeLMv9xcdJ4Y","6/7/2024" ,"Clase practica 10","Induccion y recursion 4","Practico"),
+new ApuntesP(11, "13UluPhwmSUdZBLGfw2IPAcYr3DZN-owK","6/7/2024" ,"Clase practica 11","Esquema de funciones 1","Practico"),
+new ApuntesP(12, "1GNG2xrJdd0BIMuJUSo39o_GMjMSLWiB-","6/7/2024" ,"Clase practica 12","Esquema de funciones 2","Practico"),
+new ApuntesP(13, "1t3FabRPQw-hcXWp0GwEW0Km3tYY1N3Xy","6/7/2024" ,"Clase practica 13","Monadas","Practico"),
+new ApuntesP(14, "1WNPsTCLVlul04ngGfbBR3ym3mvSfiKzH","6/7/2024" ,"Clase practica 14","Calculo Lambda","Practico"))
 
-const apunteTfunc1 = new ApuntesT(1, "","" ,"","","","","","")
 
 //REGISTRO DE MATERIAS
 
