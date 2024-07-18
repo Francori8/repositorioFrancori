@@ -3,7 +3,6 @@ class Materias{
         this.id = id
         this.nombre = nombre
         this.cargaHoraria = cargaHoraria
-        
         this.programa = `https://docs.google.com/viewer?srcid=${programa}&pid=explorer&efh=false&a=v&chrome=false&embedded=true`
         this.links = linksUtiles
         this.observacion = observacion
@@ -20,6 +19,7 @@ class Materias{
 }
 
 
+
 class ApuntesT {
         constructor(indice,src,fecha,titulo,tema,tipo,videocorrespondiente,tpcorrespondiente,ejercicios){
             this.indice = indice
@@ -32,6 +32,10 @@ class ApuntesT {
             this.tp = tpcorrespondiente
             this.ejercicios = ejercicios
           
+        }
+
+        cambiarPlataforma(link){
+            this.src = link
         }
             
 }
@@ -349,16 +353,48 @@ objetos1.apuntespracticos.push(apuntePobj1,apuntePobj2,apuntePobj3)
 const redes = new Materias("red","Redes de Computadoras",6,null,null,null)
 
 
-const apunteTred1 = new ApuntesT(1,"1Z7pXmYswsmvMHnKrNphWvl7M801cd_jJ","15/8/2023","Libro de la Materia","","Teorico",null,null,"")
-const apunteTred2 = new ApuntesT(2,"1b0BeBwpHjlmQ-yeGvmo0Pku_bK-1uMqP","15/8/2023","Presentacion","Intro Osi","Teorico",null,null,"")
-const apunteTred3 = new ApuntesT(3,"1R71uQKK4FS90pvI6gYNKQO09McCcnf65","23/8/2023","Capa de Aplicacion","Protocolos de aplicacion","Teorico",null,null," ")
+const apunteTred1 = new ApuntesT(1,"","15/8/2023","Libro de la Materia","Redes de computadores Tanenbaum","Teorico",null,null,"")
+apunteTred1.cambiarPlataforma("https://bibliotecavirtualapure.wordpress.com/wp-content/uploads/2015/06/redes_de_computadoras-freelibros-org.pdf")
 
-const apuntePred1 = new ApuntesP(1,"1R03B5OjEKKYUBIGpyrzu-vmwTHwYlp_B","15/8/2023","Practica 1","Introduccion","Practico")
-const apuntePred2 = new ApuntesP(2,"15mcpdDnkoQuDRvu6Qa8WkIsnE8064Vaq","27/8/2023","Practica 2","DNS","Practico")
-const apuntePred3 = new ApuntesP(3,"1KUgoIZ_Tp9TwFmryrzgunEdF6jlcFeru","27/8/2023","Laboratorio 1","DNS","Practico")
-//redes.videos.push(videored1, videored2)
-redes.apuntespracticos.push(apuntePred1, apuntePred2,apuntePred3)
-redes.apuntesteoricos.push(apunteTred1, apunteTred2, apunteTred3)
+redes.apuntespracticos.push( 
+    new ApuntesP(1,"1viohzSl2pXYO7FDTpAI1cBWLJjmmgckB","15/8/2023","Practica 1","Introduccion","Practico"),
+    new ApuntesP(2,"16-2skzQm_nah0K_dxu-qvJAFx86E_Jix","15/8/2023","Practica 2","DNS","Practico"),
+    new ApuntesP(3,"1BF2qyOdibjKPCR-wVLV6Eas_MT5WIE7p","15/8/2023","Laboratorio 2","DNS","Laboratorio"),
+    new ApuntesP(4,"1F33fPxhPJRKQ7jjYhLtGfVDTCHuov6Qg","15/8/2023","Practica 3","World Wide Web","Practico"),
+    new ApuntesP(5,"1aSpTHMmkXdUbwxsIixg8A7IzdRwccAGk","15/8/2023","Laboratorio 3","World Wide Web","Laboratorio"),
+    new ApuntesP(6,"1Bf9qkb5FbVV6u2knIs87p5AEpVy9ZoVX","15/8/2023","Practica 4","Correo Electronico","Practico"),
+    new ApuntesP(7,"1j0F0272b6aU29mQAXLqVLF5zlzVhsGHg","15/8/2023","Laboratorio 4","Correo Electronico","Laboratorio"),
+    new ApuntesP(8,"1xFC8Whgh_mfnrN7awOQGMF4o2Wz4TW9r","15/8/2023","Practica 5","Transporte","Practico"),
+    new ApuntesP(9,"1Y59FOVJ8o9AxdYkdwVPGAfxtuoPE4F8k","15/8/2023","Laboratorio 5","Transporte","Laboratorio"),
+    new ApuntesP(10,"1Vyk6NbIJpfRuRW4ea9sgVva81Df23K4l","15/8/2023","Practica 6","Red","Practico"),
+    new ApuntesP(11,"1Fd8MuYHHSYGQ-_v_2z8tqGH4OWKGXCod","15/8/2023","Laboratorio 6","Red","Laboratorio"),
+    new ApuntesP(12,"1cSsjS_0XIeevKXAAcpsr__CL1679LFbC","15/8/2023","Laboratorio Extra","DHCP","Laboratorio"),
+    new ApuntesP(13,"1a3i2mdz35Hv2vDKHrGevYS0uLcHSDuEI","15/8/2023","Practica 7","Enlace de datos - MAC","Practico"),
+    new ApuntesP(14,"12ujfX7yCjdIqTl2AT5eU6fAfbydXunb4","15/8/2023","Laboratorio 7","Enlace de datos - VLAN","Laboratorio"),
+    new ApuntesP(15,"1g-k7SRJxNRUoJx4bbLNEOimD5X1sFSuC","15/8/2023","Laboratorio Extra","NAT","Laboratorio")
+)
+
+redes.apuntesteoricos.push(
+    apunteTred1,
+    new ApuntesT(2,"1kESMQUtksz3ITWyclTd_P0dgozOkgiTv","15/8/2023","Presentacion","Intro Osi","Teorico","","",""),
+    new ApuntesT(3,"1WUk48PmIVFaW3uUdOc25vNNcPBRw8YpV","15/8/2023","Aplicacion 1","Capa de  Aplicacion","Teorico","","",""),
+    new ApuntesT(4,"1pnVMIeeVTFhsQU2-nVgzoBdKk2UBbyBg","15/8/2023","Aplicacion 2","SMTP - POP","Teorico","","",""),
+    new ApuntesT(5,"1tGeHEOAQRmKw3onQ3PusW-ncOaQlmOyN","15/8/2023","Aplicacion 3","HTML","Teorico","","",""),
+    new ApuntesT(6,"1-A1KHxfvSXVw_XK0VUA2is8m-RNo8quo","15/8/2023","Aplicacion 4","HTTP","Teorico","","",""),
+    new ApuntesT(7,"19R7OFdemXEIANo_E_A6PnXk5OS0iEqrS","15/8/2023","Aplicacion 5","DHCP","Teorico","","",""),
+    new ApuntesT(8,"12syTt5yQi4kq2pjKfCy44H5CnB8tyZPd","15/8/2023","Transporte","Capa de Transporte","Teorico","","",""),
+    new ApuntesT(9,"1YfCWxHBzSThAR8ZTeACVCCHi003ID12Q","15/8/2023","Red 1","Capa De Red","Teorico","","",""),
+    new ApuntesT(10,"1s9Zz7gRHpxhvWY3Y2Gphia1VpNbm6Nix","15/8/2023","Red 2","Subneteo","Teorico","","",""),
+    new ApuntesT(11,"15VDVFhmIRmJ4mEFbZnmq_6G04gd9S2uO","15/8/2023","Red 3","Ruteo","Teorico","","",""),
+    new ApuntesT(12,"17AEfl3qzuaQNMCXrnBjGPetfytnpE-67","15/8/2023","Protocolocs Auxiliares 1","Protocolo ICMP","Teorico","","",""),
+    new ApuntesT(13,"1cLWUD4g1s7WtW-nKxhOcPQlFyzCcZASX","15/8/2023","Protocolos Auxiliares 2","Protocolo Nat","Teorico","","",""),
+    new ApuntesT(14,"1Vzd6ZHp0Sf0Z1J_Mge_WjuJg2EebeNSk","15/8/2023","Enlace","Capa de Enlace","Teorico","","",""),
+    new ApuntesT(15,"1-kB5IoAP1xFjSi_JmO4E6pQmj4162fHn","15/8/2023","Enlace 2","Protocolo ARP","Teorico","","",""),
+)
+
+
+
+
 
 // Base de Datos
 
@@ -374,25 +410,42 @@ bsd.videos.push(
     new Videos(7,"NsqnkUGZLMM","6/7/2024","7 Clase Teorica BSD","SQL - Clase 1"),
     new Videos(8,"-9eiwxURAvQ","6/7/2024","8 Clase Teorica BSD","SQL - Clase 2"),
     new Videos(9,"9FROGCaFaEQ","6/7/2024","9 Clase Teorica BSD","SQL - Clase 3"),
-    new Videos(10,"uK_Wj-Tip-s","6/7/2024","10 Clase Teorica BSD","SQL - Clase 4"),
+    new Videos(10,"uK_Wj-Tip-s","6/7/2024","10 Clase Teorica BSD","SQL - Clase 4")
 )
 
-const apuntesTBsd1 = new ApuntesT(1,"146-2NBHdLUhsXDK2DO4Fxt7kVYt0zCNf","15/8/2023","Modelo Entidad Relacion","Introduccion Base de Datos","Teorico",null,1,"Todos")
-const apuntesTBsd2 = new ApuntesT(2,"1iQePHCYOxv48MXL2K4wPJ6KZOs-WXxbA","15/8/2023","Modelo Relacion 1","Introduccion Base de Datos","Teorico",null,1,"Todos")
-const apuntesTBsd3 = new ApuntesT(3,"1L2KZjxAZN6L1GoSd2MdD1NAvOmAynA4T","15/8/2023","Modelo Relacion 2","Introduccion Base de Datos","Teorico",null,1,"Todos")
-const apuntesTBsd4 = new ApuntesT(4,"1gMFGuvcjmcRO9eHDj0AHDxNK6XDms3q1","15/8/2023","Cardinalidad","Introduccion Base de Datos","Teorico",null,1,"Todos")
-const apuntesTBsd5 = new ApuntesT(5,"1RqfOvng_d2cSnS39NDpo6f47BpPPXNSN","23/8/2023","DDL","Pasaje de MR a DDL","Teorico",null," ", " ")
-const apuntesTBsd6 = new ApuntesT(6,"12JfPRDkdZDpVOhYClSSLjLrrqUNmph9U","31/8/2023","Algebra Relacional 1","Algebra relacional Introduccion","Teorico",null,null,null)
-const apuntesTBsd7 = new ApuntesT(7,"1A51dQ2ycsCoPiexytHaoTahwFWwm4ub8","31/8/2023","Algebra Relacional 2","Algebra relacional Renombre 1","Teorico",null,null,null)
-const apuntesTBsd8 = new ApuntesT(8,"1T31MtAeQ2n1Y59aqjSTEuadOrgU5a99f","31/8/2023","Algebra Relacional 3","Algebra relacional Renombre 2","Teorico",null,null,null)
+bsd.apuntesteoricos.push(
+    new ApuntesT(1,"1T59DHzc6tmpzVxCjtkKrMvUSv10lG6L2","10/7/2024","Teorica 1","MER-MR","Teorico","","",""),
+    new ApuntesT(2,"1n4nSnauiChPmUFt31P-K0fryaCYcRiWv","10/7/2024","Teorica 2","MR","Teorico","","",""),
+    new ApuntesT(3,"1o6RdzzrlNOLkv2btHMagcvbcBRxJTV1s","10/7/2024","Teorica 3","Mapeos","Teorico","","",""),
+    new ApuntesT(4,"1KasHuZtsgwwMNnpckKg_a2RWNmY_BBo_","10/7/2024","Teorica 4","SQL","Teorico","","",""),
+    new ApuntesT(5,"1-BpJlG0Gx179TcZY-eZ_lVp3AM1jleCI","10/7/2024","Extra","Explicacion Cardinalidades","Teorico","","",""),
+    new ApuntesT(6,"1OVqApxqdt26MC65C4SC1y2PHcCxdhQM9","10/7/2024","Teorica 5","AR","Teorico","","",""),
+    new ApuntesT(7,"1G_8IE7POdbmZCvymCXyPJmztSxxSyhX0","10/7/2024","Extra","Renombre","Teorico","","",""),
+    new ApuntesT(8,"1c2GPuSiJJQZ2N2U0QEE66Xuqv_2o-J6n","10/7/2024","Teorica 6-1","SQL","Teorico","","",""),
+    new ApuntesT(9,"1fEfWE1n9uLxR4dkec-af_X537Xbb81LK","10/7/2024","Teorica 6-2","SQL-DDL","Teorico","","",""),
+    new ApuntesT(10,"1aexSL6D4zSpGm_aZ9-erZ-F160pXC6sb","10/7/2024","Teorica 6-3","SQL-DML","Teorico","","",""),
+    new ApuntesT(11,"1qgxZ_tsWkgTdXHc0aunScJogAPrj1bTM","10/7/2024","Teorica 7","SQL agregation funcion","Teorico","","",""),
+    new ApuntesT(12,"1kkxjOqcj7ZRtd0q9NrjSX4wH82gXITeN","10/7/2024","Extra","Having","Teorico","","",""),
+    new ApuntesT(13,"1ph_RITnbMQbqV-yssj-EntJ96534UMtW","10/7/2024","Teorica 8","SQL JOINS","Teorico","","",""),
+    new ApuntesT(14,"17JkHgMry0wX82C3d1ng6YuRMEmzjnPuu","10/7/2024","Extra","Transacciones","Teorico","","",""),
+    new ApuntesT(15,"1uo_jXLouZDB6BkOk6feHZszhwppUCm80","10/7/2024","Extra","Indices, Vsita, Triggers","Teorico","","",""),
+    new ApuntesT(16,"13Vs1UR-wuqoQBco2jVRpG269R2WuRdjJ","10/7/2024","Teorica 9-1","Normalizacion - DF y 1FN","Teorico","","",""),
+    new ApuntesT(17,"1NSIFNs8eHOl7jL4S3DiGjv0_lSStPjXo","10/7/2024","Teorica 9-2","Normalizaion - 2FN y 3FN","Teorico","","",""),
+    new ApuntesT(18,"193jF9uZ3sdQh1jTlyH0vR3uDXCgpRJjj","10/7/2024","Teorica 9-3","Normalizacion DM y 4FN","Teorico","","",""),
 
+)
 
-const apuntesPBsd1 = new ApuntesP(1,"1BWmkOg9YsSCZTGmz9RquHtMToTYQ3ywc","15/8/2023","Practica 1","Practica mer-mr","Practico")
-const apuntesPBsd2 = new ApuntesP(2,"1cc7Hqmvq0r7SLlmSq2seQoDRq_zI4I-H","15/8/2023","Practica 2","Practica mr-sql","Practico")
-const apuntesPBsd3 = new ApuntesP(3,"1OhMRkRCzYGD-iV4ZJdMCGEj8FGrg8n0-","31/8/2023","Practica 3","Practica ar","Practico")
+bsd.apuntespracticos.push(
+    new ApuntesP(1,"1D3L-GODYBzvld2J-UwPlJ6yaa1c8FYpO","10/7/2024","Practica 1","Mer - mr","Practica"),
+    new ApuntesP(2,"1VPz4Y0mqMVrBzjMujlw8hW1RdqeOrNR8","10/7/2024","Practica 2","Mr - Sql","Practica"),
+    new ApuntesP(3,"1ejiV-te6E_qBhfCHNSkoNGyEOWiZ74gs","10/7/2024","Practica 3","Ar","Practica"),
+    new ApuntesP(4,"11Mu8HD0BmbegNh0EZYSQHG2ALQo-ECxl","10/7/2024","Practica 4","Ar - Sql","Practica"),
+    new ApuntesP(5,"14-dTwzeWSWrBGDyAsK_TG7y6JCbUPhX7","10/7/2024","Practica 5","Sql","Practica"),
+    new ApuntesP(6,"1mJGijlcqSvc5SjIqyKs3btEcu6F8M6aJ","10/7/2024","Practica 6","Df","Practica"),
+    new ApuntesP(7,"1A6SWCHa6ze2WIz35VGhAY1YcDRRPqjo0","10/7/2024","Practica 7","2FN, 3FN, 4FN","Practica"),
 
-bsd.apuntesteoricos.push(apuntesTBsd1,apuntesTBsd2,apuntesTBsd3,apuntesTBsd4, apuntesTBsd5, apuntesTBsd6,apuntesTBsd7,apuntesTBsd8)
-bsd.apuntespracticos.push(apuntesPBsd1,apuntesPBsd2, apuntesPBsd3)
+)
+
 
 // Matematica 2
 
