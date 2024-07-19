@@ -518,7 +518,25 @@ so.videos.push(videosSo1,videosSo2,videosSo3,videosSo4,videosSo5,videosSo6,video
 const progconcu = new Materias("progconcu","Programacion Concurrente",4, null, "","")
 
 progconcu.videos.push(
+   new Videos(1,"dZAV1NZYSio","15/8/2023","Clase 1","Introduccion"),
+   new Videos(2,"Z0DN-G-1k3I","15/8/2023","Clase 2","Teoricas Trazas, Exclusion Mutua"),
+   new Videos(3,"Zn62jF4h31w","15/8/2023","Clase 3","Practica Trazas"),
+   new Videos(4,"_cRBaYRuZe4","15/8/2023","Clase 4","Teoricas Acciones Atomicas"),
+   new Videos(5,"YT-YZNXuDPM","15/8/2023","Clase 5","Practica Acciones Atomicas"),
+   new Videos(6,"Oirh1mRCA2I","15/8/2023","Clase 6","Teorica semaforos 1"),
+   new Videos(7,"wHjF1loE464","15/8/2023","Clase 7","Practica semaforos 1"),
+   new Videos(8,"R8Sl82XPcIQ","15/8/2023","Clase 8","Teorica semaforos 2"),
+   new Videos(9,"jkMk364jCi8","15/8/2023","Clase 9","Practica Semaforos 2"),
+   new Videos(10,"9RAeB5otuss","15/8/2023","Clase 10","Consultas 1 Semaforos"),
+   new Videos(11,"HBLqoosi8ek","15/8/2023","Clase 11","Consultas 2 Semaforos"),
+   new Videos(12,"2JHcG0Fx6n4","15/8/2023","Clase 12","Teoria de Monitores"),
+   new Videos(13,"Bqq01o2wf0I","15/8/2023","Clase 13","Practica de Monitores"),
+   new Videos(14,"13c26lC6uCU","15/8/2023","Clase 14","Teoria de Mensajes"),
+   new Videos(15,"crpcsqGzUVU","15/8/2023","Clase 15","Practica Mensajes"),
+   new Videos(16,"ItWhG1EKYy0","15/8/2023","Clase 16","+ Practica Mensajes"),
+   new Videos(17,"MbVwSvURP3Q","15/8/2023","Clase 17","Cierre de la Materia")
    
+
 
 )
 

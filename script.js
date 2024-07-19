@@ -11,7 +11,7 @@
         -Hacer las nuevas secciones web responsive // ¿?
 
 */
-const css = document.getElementById("css")
+
 const footer = document.querySelector("footer")
 const seccionModal = document.getElementById("seccionModal")
 const contenedorMaterias = document.getElementById("contenedorMaterias")
@@ -105,32 +105,30 @@ function cambiarColor2(){
 
 
 function apartadoVideos(){
-    //materiaSeleccionada = todasLasMaterias.find(mat => document.getElementById(mat.id).checked)
-    todasLasMaterias.forEach((materia)=>{
-        if (document.getElementById(materia.id).checked){
-            materiaSeleccionada = materia
-            titulo.style.fontSize = "12px"
-            volver.style.display ="block"
-            navegacion.style.display = "flex"
-            home.style.display = "none"
-            seccionAudiovisual.style.display = "grid"
-            tituloMateria.style.display = "grid"
-            seccionApuntes.style.display = "none"
-            seccionInformacion.style.display = "none"
-            seccionJuego.style.display = "none"
-            botonIrVideo.disabled = true
-            botonIrApuntes.disabled = false
-            botonIrInformacion.disabled = false
-            botonIrJuego.disabled = false
-            contenedorApuntesTeoricos.innerHTML = ""
-            contenedorApuntesPracticos.innerHTML = ""
-            contenedorJuego.innerHTML = ""
-            contenedorPreguntas.innerHTML=""
-            cargarVideos()
-        
-           
-    }
-})
+
+    
+    materiaSeleccionada = todasLasMaterias.find(mat => document.getElementById(mat.id).checked)
+    titulo.style.fontSize = "12px"
+    volver.style.display ="block"
+    navegacion.style.display = "flex"
+    home.style.display = "none"
+    seccionAudiovisual.style.display = "grid"
+    tituloMateria.style.display = "grid"
+    seccionApuntes.style.display = "none"
+    seccionInformacion.style.display = "none"
+    seccionJuego.style.display = "none"
+    botonIrVideo.disabled = true
+    botonIrApuntes.disabled = false
+    botonIrInformacion.disabled = false
+    botonIrJuego.disabled = false
+    contenedorApuntesTeoricos.innerHTML = ""
+    contenedorApuntesPracticos.innerHTML = ""
+    contenedorJuego.innerHTML = ""
+    contenedorPreguntas.innerHTML=""
+    cargarVideos()
+
+
+
 }
 
 function cargarVideos(){
@@ -214,24 +212,24 @@ function apartadoJuego(){
 }
 
 function cargarUnidades(){
-
+    
     if(materiaSeleccionada.juego !== null){
-    materiaSeleccionada.juego.forEach((juego) =>{
-        escritura = `
-        <div>
-            <p class="modosJuegos margen10">${juego.indice}</p>
-        </div>
-        `
+        materiaSeleccionada.juego.forEach((juego) =>{
+            escritura = `
+            <div>
+                <p class="modosJuegos margen10">${juego.indice}</p>
+            </div>
+            `
 
-        contenedorJuego.innerHTML += escritura
-    })
-        cargarPreguntas()
+            contenedorJuego.innerHTML += escritura
+        })
+            cargarPreguntas()
       
     } else{
-    escritura = `
-    <p class="disculpa"> EN PROCESO, EN BREVE ESTA SECCION ESTARA PREPARADA PARA ESTA MATEIRA </p>
-    `
-    contenedorJuego.innerHTML += escritura
+        escritura = `
+        <p class="disculpa"> EN PROCESO, EN BREVE ESTA SECCION ESTARA PREPARADA PARA ESTA MATEIRA </p>
+        `
+        contenedorJuego.innerHTML += escritura
 }
 }
 
@@ -474,4 +472,4 @@ function volverAlInicio(){
 }
 
 
-window.addEventListener("onload",cargar())
+window.addEventListener("load",cargar)

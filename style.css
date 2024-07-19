@@ -18,8 +18,7 @@ body{
     font-family: 'Roboto Mono', monospace;
     color: var(--colorLetra);
     padding: 0px 5px;
-    
-    
+
 }
 
 input{
@@ -77,6 +76,7 @@ nav button{
 }
 
 #cabecera{
+    margin: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -153,7 +153,6 @@ nav button{
     height: 100%;
 }
 
-
 #seleccionarMateria{
     width: 180px;
     height: 40px;
@@ -170,6 +169,7 @@ nav button{
 .btn-navegacion{
     background-color: black;
     border: 2px solid white;
+    
 }
 .apartadoVideos{
     width: 60px;
@@ -183,7 +183,7 @@ nav button{
 
 #grillaApuntes{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     margin: 5px;
 }
 
@@ -206,7 +206,7 @@ nav button{
     
 }
 #titulito{
-  
+    padding: 5px;
     justify-content: center;
 }
 
