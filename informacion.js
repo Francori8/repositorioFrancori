@@ -613,8 +613,25 @@ new ApuntesP(13, "1t3FabRPQw-hcXWp0GwEW0Km3tYY1N3Xy","6/7/2024" ,"Clase practica
 new ApuntesP(14, "1WNPsTCLVlul04ngGfbBR3ym3mvSfiKzH","6/7/2024" ,"Clase practica 14","Calculo Lambda","Practico"))
 
 
+// Programacion Orinetada a Objetos 2
+const progObj2 = new Materias("pobj2","Programacion Orientada a Objetos 2", 6,"","")
+
+
+
+
+// Logica y Programacion
+const log = new Materias("log","Logica y Programacion",4,"","")
+
+log.apuntespracticos.push(
+    new ApuntesP(1,"1Pid1y5-A8_ru4HjiZvgsyVhjjg5Hdwyi" ,"16/8/2024","Practica 1","Logica Proposicional, sintxis y semantica","Practica")
+)
+
+log.apuntesteoricos.push(
+    new ApuntesT(1,"19rbIW5_gERLN7u2OhUyLpHy9szFgZiGz","16/8/2024","Teorica 1","Logica Proposicional y Forma Normal Coguntiva","Teorico",null,"1","Todos")
+)
+
 //REGISTRO DE MATERIAS
 
 let todasLasMaterias =[]
 
-todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1,redes, bsd, mat2, so , progconcu , progFunc)
+todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1,redes, bsd, mat2, so , progconcu , progFunc ,log)
