@@ -616,6 +616,23 @@ new ApuntesP(14, "1WNPsTCLVlul04ngGfbBR3ym3mvSfiKzH","6/7/2024" ,"Clase practica
 // Programacion Orinetada a Objetos 2
 const progObj2 = new Materias("pobj2","Programacion Orientada a Objetos 2", 6,"","")
 
+progObj2.videos.push(
+    new Videos(1,"oYSLwORU0ZM","año 2020","Teoria UML","UML"),
+    new Videos(2,"3ITG-OFhThc","2020","Startup Java Eclipse GIT","Inicializar workspace"),
+    new Videos(3,"C-WgNtdGsR4","2020","GIT","GIT consola"),
+    
+)
+
+progObj2.apuntespracticos.push(
+    new ApuntesP(1,"1l0MDQGyMH-h-BBt7T-W9U_AfqBgxjuBT","20/8/2024","TP1","Repaso","Practico"),
+    new ApuntesP(2,"1DgRvcd6OdkT1qyUi2TUHY-bqK95xrqHg","20/8/2024","TP2","UML","Practico"),
+    new ApuntesP(3,"1lbcKidtbPv1Y_6nO7FrndlmY_0myW4UV","20/8/2024","TP3","Java primeros pasos","Practico"),
+)
+
+progObj2.apuntesteoricos.push(
+    new ApuntesT(1,"1bvnk3E6KufZ2572dCeMQvLPUfYZyEd4v","20/8/2024","Teorica 1","Repaso de Objetos 1 y Java","Teorico",null,[1,2,3],"Todos"),
+)
+
 
 
 
@@ -623,15 +640,18 @@ const progObj2 = new Materias("pobj2","Programacion Orientada a Objetos 2", 6,""
 const log = new Materias("log","Logica y Programacion",4,"","")
 
 log.apuntespracticos.push(
-    new ApuntesP(1,"1Pid1y5-A8_ru4HjiZvgsyVhjjg5Hdwyi" ,"16/8/2024","Practica 1","Logica Proposicional, sintxis y semantica","Practica")
+    new ApuntesP(1,"1Pid1y5-A8_ru4HjiZvgsyVhjjg5Hdwyi" ,"16/8/2024","Practica 1","Logica Proposicional, sintxis y semantica","Practica"),
+    new ApuntesP(2,"1I60cuNgeDm3SMcuvEvd8UuiVugzuF2RY" ,"16/8/2024","Practica 2","Deduccion Natural, Correccion y Completitud para PROP","Practica")
 )
 
 log.apuntesteoricos.push(
-    new ApuntesT(1,"19rbIW5_gERLN7u2OhUyLpHy9szFgZiGz","16/8/2024","Teorica 1","Logica Proposicional y Forma Normal Coguntiva","Teorico",null,"1","Todos")
+    new ApuntesT(1,"19rbIW5_gERLN7u2OhUyLpHy9szFgZiGz","16/8/2024","Teorica 1","Logica Proposicional y Forma Normal Coguntiva","Teorico",null,"1","Todos"),
+    new ApuntesT(2,"1pBHT7aAU00qrvwpPuwTH963mJTMaBpSh","16/8/2024","Teorica 2","Deduccion Natural","Teorico",null,"2","Todos"),
+    new ApuntesT(3,"1UTv35tOZjSvSpBlDPNncTKN6aRDo1cqP","16/8/2024","Teorica 3","Correccion y Completitud","Teorico",null,"2","Todos"),
 )
 
 //REGISTRO DE MATERIAS
 
 let todasLasMaterias =[]
 
-todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1,redes, bsd, mat2, so , progconcu , progFunc ,log)
+todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1,redes, bsd, mat2, so , progconcu , progFunc ,log, progObj2)
