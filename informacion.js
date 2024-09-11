@@ -614,7 +614,7 @@ new ApuntesP(14, "1WNPsTCLVlul04ngGfbBR3ym3mvSfiKzH","6/7/2024" ,"Clase practica
 
 
 // Programacion Orinetada a Objetos 2
-const progObj2 = new Materias("pobj2","Programacion Orientada a Objetos 2", 6,"","")
+const progObj2 = new Materias("pobj2","Programacion Orientada a Objetos 2", 6,`<a href=https://poo2unq.github.io/site/ target = "_blanck">Sitie</a>`,"")
 
 progObj2.videos.push(
     new Videos(1,"oYSLwORU0ZM","año 2020","Teoria UML","UML"),
@@ -627,10 +627,18 @@ progObj2.apuntespracticos.push(
     new ApuntesP(1,"1l0MDQGyMH-h-BBt7T-W9U_AfqBgxjuBT","20/8/2024","TP1","Repaso","Practico"),
     new ApuntesP(2,"1DgRvcd6OdkT1qyUi2TUHY-bqK95xrqHg","20/8/2024","TP2","UML","Practico"),
     new ApuntesP(3,"1lbcKidtbPv1Y_6nO7FrndlmY_0myW4UV","20/8/2024","TP3","Java primeros pasos","Practico"),
+    new ApuntesP(4,"1CmXeiMtR5ZJADnszM2xdjgNRdELgM4p2","7/9/2024","TP4","Java POO","Practico"),
+    new ApuntesP(5,"1KDHLuzVwnQ3Fdj6YAaYYXtpEFFX87Jjc","7/9/2024","TP5","Abstracta vs Interfaces","Practico"),
+    new ApuntesP(6,"1-TeflJGseztbZaap4GdqiW3rCiGrWk5V","7/9/2024","TP6","SOLID","Practico"),
+
 )
 
 progObj2.apuntesteoricos.push(
     new ApuntesT(1,"1bvnk3E6KufZ2572dCeMQvLPUfYZyEd4v","20/8/2024","Teorica 1","Repaso de Objetos 1 y Java","Teorico",null,[1,2,3],"Todos"),
+    new ApuntesT(2,"15DLZulqlX2waMYDWqj7oMNMyFaXDkTNT","7/9/2024","Teorica 2","Pilares del Lenguaje Java","Teorico",null, null,null),
+    new ApuntesT(3,"14fkZcHCsUeM0032anYfUjp2CeumTHZNm","7/9/2024","Teorica 3","Contrato de interfaces","Teorico",null,null,null),
+    new ApuntesT(4,"14fkZcHCsUeM0032anYfUjp2CeumTHZNm","7/9/2024","Teorica 4","Ejemplo de interfaces","Teorico",null,null,null),
+    
 )
 
 
