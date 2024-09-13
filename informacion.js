@@ -649,13 +649,15 @@ const log = new Materias("log","Logica y Programacion",4,"","")
 
 log.apuntespracticos.push(
     new ApuntesP(1,"1Pid1y5-A8_ru4HjiZvgsyVhjjg5Hdwyi" ,"16/8/2024","Practica 1","Logica Proposicional, sintxis y semantica","Practica"),
-    new ApuntesP(2,"1I60cuNgeDm3SMcuvEvd8UuiVugzuF2RY" ,"16/8/2024","Practica 2","Deduccion Natural, Correccion y Completitud para PROP","Practica")
+    new ApuntesP(2,"1I60cuNgeDm3SMcuvEvd8UuiVugzuF2RY" ,"16/8/2024","Practica 2","Deduccion Natural, Correccion y Completitud para PROP","Practica"),
+    new ApuntesP(3,"1i7_0VStdjd6tmC_iqWqRqz-YEpq9_vjn" ,"13/9/2024","Practica 3","Logica de Predicados","Practica")
 )
 
 log.apuntesteoricos.push(
     new ApuntesT(1,"19rbIW5_gERLN7u2OhUyLpHy9szFgZiGz","16/8/2024","Teorica 1","Logica Proposicional y Forma Normal Coguntiva","Teorico",null,"1","Todos"),
     new ApuntesT(2,"1pBHT7aAU00qrvwpPuwTH963mJTMaBpSh","16/8/2024","Teorica 2","Deduccion Natural","Teorico",null,"2","Todos"),
-    new ApuntesT(3,"1UTv35tOZjSvSpBlDPNncTKN6aRDo1cqP","16/8/2024","Teorica 3","Correccion y Completitud","Teorico",null,"2","Todos"),
+    new ApuntesT(3,"1UTv35tOZjSvSpBlDPNncTKN6aRDo1cqP","16/8/2024","Teorica 3","Correccion y Completitud PROP","Teorico",null,"2","Todos"),
+    new ApuntesT(4,"1o3n_JUrN34eYDDqaacCeGXMdXoGYJX6E","13/9/2024","Teorica 4","Logica de Predicados","Teorico",null,"3","Todos"),
 )
 
 //REGISTRO DE MATERIAS
