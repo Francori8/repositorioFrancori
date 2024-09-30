@@ -620,6 +620,9 @@ progObj2.videos.push(
     new Videos(1,"oYSLwORU0ZM","año 2020","Teoria UML","UML"),
     new Videos(2,"3ITG-OFhThc","2020","Startup Java Eclipse GIT","Inicializar workspace"),
     new Videos(3,"C-WgNtdGsR4","2020","GIT","GIT consola"),
+    new Videos(4,"XWqH1TvMhTc","2020","Interfaces Java","Abstractas vs Interfaces"),
+    new Videos(5,"k_btrOB7Arg","30/9/2024","Test Doubles","Repaso TDD, Test y Test"),
+    new Videos(6,"Tys62sak1Jk","30/9/2024","Teorica Mockito","Mockito")
     
 )
 
@@ -631,10 +634,11 @@ progObj2.apuntespracticos.push(
     new ApuntesP(5,"1KDHLuzVwnQ3Fdj6YAaYYXtpEFFX87Jjc","7/9/2024","TP5","Abstracta vs Interfaces","Practico"),
     new ApuntesP(6,"1-TeflJGseztbZaap4GdqiW3rCiGrWk5V","7/9/2024","TP6","SOLID","Practico"),
     new ApuntesP(7, "1EyqldbnGgAimev5rXjEvHq4sYdchsuVd","30/9/2024","TP7","Template Method y Adapter","Practica"),
-    new ApuntesP(8, "1ZMNKKxwlfDUrkzZB-Xk8T2vl4h4iZVQc","30/9/2024","TP8","Streams y Enums","Practico")
+    new ApuntesP(8, "1ZMNKKxwlfDUrkzZB-Xk8T2vl4h4iZVQc","30/9/2024","TP8","Streams y Enums","Practico"),
+    new ApuntesP(9,"1YFVpeEYVg7oyHSHBFwgdIU8P3bdVpnmp","30/9/2024","TP9","Test Doubles,  Mockito","Practica")
     
 )
-
+ 
 progObj2.apuntesteoricos.push(
     new ApuntesT(1,"1bvnk3E6KufZ2572dCeMQvLPUfYZyEd4v","20/8/2024","Teorica 1","Repaso de Objetos 1 y Java","Teorico",null,[1,2,3],"Todos"),
     new ApuntesT(2,"15DLZulqlX2waMYDWqj7oMNMyFaXDkTNT","7/9/2024","Teorica 2","Pilares del Lenguaje Java","Teorico",null, null,null),
@@ -642,7 +646,8 @@ progObj2.apuntesteoricos.push(
     new ApuntesT(4,"14fkZcHCsUeM0032anYfUjp2CeumTHZNm","7/9/2024","Teorica 4","Ejemplo de interfaces","Teorico",null,null,null),
     new ApuntesT(5,"1kZ21q7q0UiVzXY6FwTRFY7uUUi1Pk164","30/9/2024","Teorico 5","Template Method y  Adapter","Teorico",null,7,"Todos"),
     new ApuntesT(6,"11N7f5msmFhhQODNOFV4KYQgJbUYvruaX","30/9/2024","Teorico 6","Enums","Teorico",null, 8,"1"),
-    new ApuntesT(6,"1ykHUPfnjB6h5yYS4Xy2lV5GaMEAUoVYt","30/9/2024","Teorico 7","Streams","Teorico",null, 8,"2")
+    new ApuntesT(7,"1ykHUPfnjB6h5yYS4Xy2lV5GaMEAUoVYt","30/9/2024","Teorico 7","Streams","Teorico",null, 8,"2"),
+    new ApuntesT(8,"1lYatRlTCM8PCbjytp9ePQwGdgn59kVeE","30/9/2024","Teorica 8","Test Doubles, Mockito","Teorica",6,9,"Todos")
 )
 
 
