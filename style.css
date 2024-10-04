@@ -242,9 +242,12 @@ a:active{
     font-weight: 700;
 }
 
+#juego{
+    justify-content: space-around;
+}
 #preguntas{
     width: 70%;
-    align-content: center;
+    
     padding: 10px;
     margin: 5px;
 }

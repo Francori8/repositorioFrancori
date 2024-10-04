@@ -104,6 +104,21 @@ let introduccionalaprogramacionJuego = [
 
 ]
 
+const obj2Juego = [
+    new Juego("jo2","Teoria",[
+        new Pregunta("En un Strategy, siempre puedo eliminar directamente una subclase  sin mayores inconvenientes En la de State tambien","Falso",["Verdadero", "No se"]),
+        new Pregunta("En java, un lenguaje estaticamente tipado, cuando un objeto esta tipado como una interfaz, solo puedo enviarle los mensajes definidos alli y ualquier otro publico definido en su propia clase","Falso",["Verdadero", "No se"]),
+        new Pregunta("El principio Open-Closed establece:","Se debe propiciar la extension del codigo sin requerimientos de modificaciones adicionales",["Una sublccase siempre puede ocupar el lugar de una superclase", "Toda superclase debe implementar una interfaz","Ninguna de las anteriores"]),
+        new Pregunta("Al usar test doubles, la lase a mockear es aquella que quiero testear (el SUT)","Falso",["Verdadero"]),
+        new Pregunta("¿Que patron de diseño permite intercambiar dinamicamente entre distintos algoritmos/formas de ejecutar una misma  operacion","Strategy",["State","Composety","Observer","Adapter","Builder","Object null"]),
+        new Pregunta("En el patron State:","Ninguna de las anteriores",["Que pregunta de mierda que tomaron","Existe recursion algoritmica","Existe recursion estrutural","Existen las dos recursiones"]),
+        new Pregunta("Una clase abstracta no puede contener constructores","Falso",["Verdadero"]),
+        new Pregunta("Un objeto puede estar tipado de diferentes maneras a lo largo de su ciclo de vida","Verdadero",["Falso"]),
+        new Pregunta("Cuando se tiene una jerarquia con una clase abstracta, siempre puedo eliminarla y cambiarla por una interfaz","Falso",["Verdadero"])
+    ])
+]
+
 matematica1.agregarJuego(matematica1Juego)
 introduccionProgramacion.agregarJuego(introduccionalaprogramacionJuego)
+progObj2.agregarJuego(obj2Juego)
 
