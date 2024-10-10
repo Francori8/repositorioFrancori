@@ -635,7 +635,10 @@ progObj2.apuntespracticos.push(
     new ApuntesP(6,"1-TeflJGseztbZaap4GdqiW3rCiGrWk5V","7/9/2024","TP6","SOLID","Practico"),
     new ApuntesP(7, "1EyqldbnGgAimev5rXjEvHq4sYdchsuVd","30/9/2024","TP7","Template Method y Adapter","Practica"),
     new ApuntesP(8, "1ZMNKKxwlfDUrkzZB-Xk8T2vl4h4iZVQc","30/9/2024","TP8","Streams y Enums","Practico"),
-    new ApuntesP(9,"1YFVpeEYVg7oyHSHBFwgdIU8P3bdVpnmp","30/9/2024","TP9","Test Doubles,  Mockito","Practica")
+    new ApuntesP(9,"1YFVpeEYVg7oyHSHBFwgdIU8P3bdVpnmp","30/9/2024","TP9","Test Doubles,  Mockito","Practica"),
+    new ApuntesP(10,"1hjCDOc7pV9SjwRMlKMgyEY5An9SMlg6T","6/10/2024","TP10","State y Strategy","Practica"),
+    new ApuntesP(11,"1MBDKpUH50TnV1LnI37hu-VDS5d_rGN2H","6/10/2024","TP11","Composite","Practica"),
+    new ApuntesP(12,"1IYQC2tfZIXE5eDRZKnCg9aEUtfWrtDuc","6/10/2024","TP12","Observer","Practica"),
     
 )
  
