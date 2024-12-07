@@ -665,6 +665,8 @@ log.apuntespracticos.push(
     new ApuntesP(3,"1i7_0VStdjd6tmC_iqWqRqz-YEpq9_vjn" ,"13/9/2024","Practica 3","Logica de Predicados","Practica"),
     new ApuntesP(4,"1Jx4YoZrXDT4JephSlaUeDT15lF5yuvBd" ,"4/10/2024","Practica 4","Logica de Predicados Correccion y Completitud","Practica"),
     new ApuntesP(5,"16bLX0BUZ172yEgf05pgicxTVFM0U1lb8" ,"25/10/2024","Practica 5","Resolucion en PROP y PRED","Practica"),
+    new ApuntesP(6, "11C9m6WLZ70dqtt88YmlHekhproT9o3rJ" , "08/11/2024","Practica 6","Resolucion SLD","Practico"),
+    new ApuntesP(7, "1ryq6C7vfGupP2137XBWhIjNoL6i40iOq" , "22/11/2024","Practica 7","Verificacion","Practico")
 )
 
 log.apuntesteoricos.push(
@@ -675,6 +677,9 @@ log.apuntesteoricos.push(
     new ApuntesT(5,"1bgOg_P2FYSRD3Yq4hEsl2G62kw2wjdp3","4/10/2024","Teorica 5","Logica de Predicados correccion y Completitud","Teorico",null,"4","Todos"),
     new ApuntesT(6,"1A-gBWAhYx-Gt9TVSUE5AZD28Npxu7zjr","25/10/2024","Teorica 6","Resolucion en PROP","Teorico",null,"5","Todos"),
     new ApuntesT(7,"1EuDuZiBnPB8B0JwzClu7kdmOVCkEmYTL","25/10/2024","Teorica 7","Resolucion","Teorico",null,"5","Todos"),
+    new ApuntesT(8,"1eFoo5tKxSgmMlkL5oso8_2-ftFys0mDf","08/11/2024","Teorica 8","Resolucion SLD","Teorico",null,"6","Todos"),
+    new ApuntesT(9,"1Pu-gj3eNOOaXsQUHJF1GRF57G9dr_MJj","22/11/2024","Teorica 9-1","Verificacion (Parte 1)","Teorico",null,"7","Todos"),
+    new ApuntesT(9,"19HAGeoM_rII4NqAhj8rKfixg-CzvSCD4","22/11/2024","Teorica 9-2","Verificacion (Parte 2)","Teorico",null,"7","Todos")
 )
 
 //REGISTRO DE MATERIAS
