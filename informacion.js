@@ -682,8 +682,24 @@ log.apuntesteoricos.push(
     new ApuntesT(9,"19HAGeoM_rII4NqAhj8rKfixg-CzvSCD4","22/11/2024","Teorica 9-2","Verificacion (Parte 2)","Teorico",null,"7","Todos")
 )
 
+// Elementos de Ingenineria de Software
+const eis = new Materias("eis","Elenentos de Ingenieria de Software", 6, "", "http://eis.blog.unq.edu.ar/ejercitacion/","")
+
+eis.apuntespracticos.push(
+    new ApuntesP(1,"1fCG-UQBtJ-_A9Qz05W1KKs6NtNa4MQZD" ,"17/03/2025","Practica 1","Introduccion, Ciclos de vida, metodologias","Practica"),
+)
+
+eis.apuntesteoricos.push(
+    new ApuntesT(1,"1mKSuqkmzkqwWRXGmxoteDhQSvKgFh2fd","17/03/2025","Libro elementos V3","Todos","Libro Teorico","","Todos","Todos"),
+)
+
+
+// Estrategias de Persistencia
+
+// Analisis Matematico 1
+
 //REGISTRO DE MATERIAS
 
 let todasLasMaterias =[]
 
-todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1,redes, bsd, mat2, so , progconcu , progFunc ,log, progObj2)
+todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1,redes, bsd, mat2, so , progconcu , progFunc ,log, progObj2, eis)
