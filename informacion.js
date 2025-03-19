@@ -683,10 +683,11 @@ log.apuntesteoricos.push(
 )
 
 // Elementos de Ingenineria de Software
-const eis = new Materias("eis","Elenentos de Ingenieria de Software", 6, "", "http://eis.blog.unq.edu.ar/ejercitacion/","")
+const eis = new Materias("eis","Elenentos de Ingenieria de Software", 6, "", `<a href="http://eis.blog.unq.edu.ar/ejercitacion/ "> blog</a>`,"")
 
 eis.apuntespracticos.push(
     new ApuntesP(1,"1fCG-UQBtJ-_A9Qz05W1KKs6NtNa4MQZD" ,"17/03/2025","Practica 1","Introduccion, Ciclos de vida, metodologias","Practica"),
+    new ApuntesP(2,"1vLCBJMuU-1dyFZpRzB3GGYf6cR5usqmx","19/03/2025","Practica 2","","Practica")
 )
 
 eis.apuntesteoricos.push(
@@ -697,6 +698,16 @@ eis.apuntesteoricos.push(
 // Estrategias de Persistencia
 
 // Analisis Matematico 1
+
+const am1 = new Materias("am1", "Analisis Matematico 1", 6, "","","")
+
+am1.apuntespracticos.push(
+    new ApuntesP(1,"1eFp4wsm8hyNVOYfT3plYf89sdnmmLuo-" ,"19/03/2025","Practica 1","Introduccion funciones","Practica"),
+)
+
+am1.apuntesteoricos.push(
+    new ApuntesT(1,"1uopKAPjmpGU1-b1awA7Xpp44IwVkiCDH","19/03/2025","Teorico 1","Introduccion funciones","Teorico","","Todos","Todos"),
+)
 
 //REGISTRO DE MATERIAS
 
