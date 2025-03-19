@@ -713,4 +713,4 @@ am1.apuntesteoricos.push(
 
 let todasLasMaterias =[]
 
-todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1,redes, bsd, mat2, so , progconcu , progFunc ,log, progObj2, eis)
+todasLasMaterias.push(matematica1,introduccionProgramacion,tallerTabajoUniversitario, orga, estructuradDeDatos, objetos1,redes, bsd, mat2, so , progconcu , progFunc ,log, progObj2, eis, am1)
