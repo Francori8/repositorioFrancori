@@ -707,6 +707,7 @@ am1.apuntespracticos.push(
 
 am1.apuntesteoricos.push(
     new ApuntesT(1,"1uopKAPjmpGU1-b1awA7Xpp44IwVkiCDH","19/03/2025","Teorico 1","Introduccion funciones","Teorico","","Todos","Todos"),
+    new ApuntesT(2,"1TFElQ538t5XBp3Xjq_B6tivRlsCLM4An","25/03/2025","Teorico 2","Logaritmo y Exponencial","Teorico","","Todos","Todos"),   
 )
 
 //REGISTRO DE MATERIAS
