@@ -3,7 +3,7 @@ class Materias{
         this.id = id
         this.nombre = nombre
         this.cargaHoraria = cargaHoraria
-        this.programa = `https://docs.google.com/viewer?srcid=${programa}&pid=explorer&efh=false&a=v&chrome=false&embedded=true`
+        this.programa = `https://drive.google.com/file/d/${programa}/preview`
         this.links = linksUtiles
         this.observacion = observacion
         this.videos = []
@@ -23,7 +23,7 @@ class Materias{
 class ApuntesT {
         constructor(indice,src,fecha,titulo,tema,tipo,videocorrespondiente,tpcorrespondiente,ejercicios){
             this.indice = indice
-            this.src = `https://docs.google.com/viewer?srcid=${src}&pid=explorer&efh=false&a=v&chrome=false&embedded=true`
+            this.src = `https://drive.google.com/file/d/${src}/preview`
             this.fecha = fecha
             this.titulo = titulo 
             this.tema = tema
@@ -43,7 +43,7 @@ class ApuntesT {
 class ApuntesP {
     constructor(indice,src,fecha,titulo,tema,tipo){
         this.indice = indice
-        this.src = `https://docs.google.com/viewer?srcid=${src}&pid=explorer&efh=false&a=v&chrome=false&embedded=true`
+        this.src = `https://drive.google.com/file/d/${src}/preview`
         this.fecha = fecha
         this.titulo = titulo 
         this.tema = tema
